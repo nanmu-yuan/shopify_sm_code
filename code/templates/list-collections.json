@@ -1,0 +1,147 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-list-template",
+      "blocks": {
+        "06786fde-900d-4048-b2a7-2f1af4b4963e": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "sweaters"
+          }
+        },
+        "c3c7dd10-c393-458e-a903-3de238b2e424": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "leather-boots"
+          }
+        },
+        "b43bcd47-6305-4507-86b2-397dcbb3cdfc": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "denim-pants"
+          }
+        },
+        "de3e2d10-7521-4a24-98ca-fcc875a7d231": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "best-seller-11",
+            "image": "shopify:\/\/shop_images\/04-river_of_darkness.jpg"
+          }
+        },
+        "3aedbb94-935a-4d80-865f-7c7fbbbddb39": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "girls-1",
+            "image": "shopify:\/\/shop_images\/01-more_than_baseball.jpg"
+          }
+        },
+        "17b453d1-b173-4aed-8571-7dc75d2ec6ca": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "men",
+            "image": "shopify:\/\/shop_images\/03-bttoms.jpg"
+          }
+        },
+        "7a37b248-dc12-4958-8af9-8b07c072fed1": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/20220302-162430.png"
+          }
+        }
+      },
+      "block_order": [
+        "06786fde-900d-4048-b2a7-2f1af4b4963e",
+        "c3c7dd10-c393-458e-a903-3de238b2e424",
+        "b43bcd47-6305-4507-86b2-397dcbb3cdfc",
+        "de3e2d10-7521-4a24-98ca-fcc875a7d231",
+        "3aedbb94-935a-4d80-865f-7c7fbbbddb39",
+        "17b453d1-b173-4aed-8571-7dc75d2ec6ca",
+        "7a37b248-dc12-4958-8af9-8b07c072fed1"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "display_type": "selected",
+        "title": "All collection",
+        "description": ""
+      }
+    },
+    "16462953748898bde5": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "1646295374e980ec53-0": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "1646295374e980ec53-1": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "1646295374e980ec53-2": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "1646295374e980ec53-3": {
+          "type": "banner",
+          "settings": {
+            "collection": "",
+            "title": "New season in town",
+            "description": "Claritas est etiam processus dynamicus qui sequitur.",
+            "item_bg": "#000",
+            "item_text_color": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "1646295374e980ec53-0",
+        "1646295374e980ec53-1",
+        "1646295374e980ec53-2",
+        "1646295374e980ec53-3"
+      ],
+      "settings": {
+        "heading": "Shop by collections",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "layout": "grid",
+        "card_style": "standard",
+        "text_alignment": "left",
+        "hover_effect": "scaling-down",
+        "show_product_count": true,
+        "count_inline_title": true,
+        "image_rounded": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_scroll_mobile": true,
+        "mobile_gap": 10,
+        "hidden_slide_control_mobile": false,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16462953748898bde5"
+  ]
+}

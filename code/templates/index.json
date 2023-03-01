@@ -1,0 +1,921 @@
+{
+  "sections": {
+    "1621243260e1af0c20": {
+      "type": "slider",
+      "blocks": {
+        "1621243260e1af0c20-1": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/20230106-114618.jpg",
+            "mb_background": "shopify:\/\/shop_images\/20230106-114623.jpg",
+            "image_alignment": "center top",
+            "content_in_container": false,
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "text_size": "large",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "https:\/\/www.thesupermade.com\/collections\/best-seller",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-secondary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "",
+            "footer_button": "",
+            "footer_link": ""
+          }
+        },
+        "f34b3339-cce2-4c9b-9dca-049ef5ac4baf": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/20230301-101358.jpg",
+            "mb_background": "shopify:\/\/shop_images\/20230301-101406.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "https:\/\/www.thesupermade.com\/pages\/s2o-tickets",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "1621243260e1af0c20-2": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/rolling-loud-1_6d8e0481-5b9d-4321-9358-ab955aaf38de.jpg",
+            "mb_background": "shopify:\/\/shop_images\/rolling-loud-M_8c3af792-ac75-4e64-a497-c2709a069130.jpg",
+            "image_alignment": "center top",
+            "content_in_container": false,
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "text_size": "large",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "https:\/\/www.thesupermade.com\/pages\/rollingloud-tickets",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-secondary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "The ReCotton Tee",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "1621243260e1af0c20-0": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "background": "shopify:\/\/shop_images\/20221110-152909.jpg",
+            "mb_background": "shopify:\/\/shop_images\/20221110-152915.jpg",
+            "image_alignment": "center top",
+            "content_in_container": false,
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "text_size": "large",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "<p><\/p>",
+            "image_link": "shopify:\/\/collections\/blowout-sale",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-secondary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "",
+            "footer_button": "",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1621243260e1af0c20-1",
+        "f34b3339-cce2-4c9b-9dca-049ef5ac4baf",
+        "1621243260e1af0c20-2",
+        "1621243260e1af0c20-0"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": false,
+        "show_arrows": false,
+        "autorotate": true,
+        "autorotate_speed": 3,
+        "use_content_above": false,
+        "custom_class": ""
+      }
+    },
+    "f461491e-023b-4056-b36b-b84ed6be86aa": {
+      "type": "custom-content",
+      "blocks": {
+        "template--16689519034594__f461491e-023b-4056-b36b-b84ed6be86aa-1669707277ed0ae39e-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Talk about your brand",
+            "subheading": "",
+            "text": "",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "template--16689519034594__f461491e-023b-4056-b36b-b84ed6be86aa-1669707277ed0ae39e-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "e1fc78e3-2202-48cb-8d8d-c576c6c63ee3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>2022 is a tough year for growth. To allow our employees to have a pleasant paid holiday while we perform factory automation upgrades, several of our warehouses and factories in East Asia will be closed for up to a month this year. For orders placed on or after January 17th for non-stock items, we will start shipping in late February.<br\/><br\/>To make up for your wait, we will send you a complimentary accessory and a $20 no-threshold discount coupon with your package.<br\/><br\/>Dear trendsetters, The <strong>Supermade<\/strong> thank you for your company and we will continue to strive to provide you with excellent service and trendy clothing in the future.<\/p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "large",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16689519034594__f461491e-023b-4056-b36b-b84ed6be86aa-1669707277ed0ae39e-0",
+        "template--16689519034594__f461491e-023b-4056-b36b-b84ed6be86aa-1669707277ed0ae39e-1",
+        "e1fc78e3-2202-48cb-8d8d-c576c6c63ee3"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": ""
+      }
+    },
+    "165656068271966e6d": {
+      "type": "custom-content",
+      "disabled": true,
+      "blocks": {
+        "2b3d102c-53ae-437d-a315-05e81838ea5d": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "code": "<div class=\"creeping-line__row\">\n  <div class=\"col-auto\">\n    <div class=\"creeping-line__text\">BUY 2 GET 10% OFF<\/div>\n    <div class=\"creeping-line__text\">BUY 3 GET 15% OFF<\/div>\n    <div class=\"creeping-line__text\">BUY 4 GET 20% OFF<\/div>\n  <\/div>\n  <div class=\"col-auto line2\">\n    <div class=\"creeping-line__text\">BUY 2 GET 10% OFF<\/div>\n    <div class=\"creeping-line__text\">BUY 3 GET 15% OFF<\/div>\n    <div class=\"creeping-line__text\">BUY 4 GET 20% OFF<\/div>\n  <\/div>\n  \n<\/div>\n<style>\n  .creeping-line__row{width: 200%; display: flex; background: #F2F2F2; padding: 10px 0; position: relative; animation:leftToRight 30s linear infinite;}\n  .creeping-line__row .col-auto{display: flex;width: 50%;}\n  .creeping-line__row .col-auto .creeping-line__text{white-space:nowrap;flex: 1; font-size: 22px; color: #000;}\n  \n  @media screen and (max-width: 767px){\n    .creeping-line__row{width: 400%; animation:leftToRight2 20s linear infinite;}\n    \n     \n  }\n  @keyframes leftToRight\n\t{\n    from {left: 0;}\n    to {left: -100%;}\n  }\n  @keyframes leftToRight2\n  {\n    from {left: 0;}\n    to {left: -200%;}\n  }\n<\/style>\n<script>\n  (function(){\n\n  })()\n<\/script>",
+            "width": "100%",
+            "block_custom_class": ""
+          }
+        },
+        "8426488d-16ba-4f92-95a5-42c15021ff29": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobile-2.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "2b3d102c-53ae-437d-a315-05e81838ea5d",
+        "8426488d-16ba-4f92-95a5-42c15021ff29"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "gap": 0,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": ""
+      }
+    },
+    "1656411378e109fa4a": {
+      "type": "custom-content",
+      "blocks": {
+        "64321659-f49e-4a7c-af99-31e40ec2aaa5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_f0de93c7-e5f2-4e0b-8328-0a441bb68a00.jpg",
+            "link": "shopify:\/\/collections\/tees",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "42be1fbd-1ca2-47da-8798-7fec1d98bec3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_ce107be8-f793-4cd7-855e-8f81e61776e0.jpg",
+            "link": "shopify:\/\/collections\/jackets",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "0cea92b6-93b8-4172-8fbf-3c68dad51ea8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_4194b506-e7fa-4b15-9c0d-cd91c44395c1.jpg",
+            "link": "shopify:\/\/collections\/bottoms",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "181d1088-d9f2-4e24-95db-9909b1e226c6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_3af08d3a-62aa-4b16-b23b-a8b93d79e60d.jpg",
+            "link": "shopify:\/\/collections\/shoes",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "64321659-f49e-4a7c-af99-31e40ec2aaa5",
+        "42be1fbd-1ca2-47da-8798-7fec1d98bec3",
+        "0cea92b6-93b8-4172-8fbf-3c68dad51ea8",
+        "181d1088-d9f2-4e24-95db-9909b1e226c6"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 0,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": ""
+      }
+    },
+    "16564664091e467c89": {
+      "type": "product-tabs",
+      "blocks": {
+        "165646640909474b27-0": {
+          "type": "tab",
+          "settings": {
+            "title": "BESTSELLER",
+            "collection": "best-seller"
+          }
+        }
+      },
+      "block_order": [
+        "165646640909474b27-0"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "left",
+        "container": "container",
+        "background_color": "rgba(0,0,0,0)",
+        "tab_header": "horizontal",
+        "limit": 50,
+        "show_button": true,
+        "button_type": "link",
+        "button_label": "View More",
+        "button_style": "sf__btn-link",
+        "button_size": "",
+        "pcard_layout": "1",
+        "pcard_image_ratio": "3\/4",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 16,
+        "enable_slider": true,
+        "show_navigation": true,
+        "show_pagination": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 10,
+        "custom_class": "bestSeller"
+      }
+    },
+    "e195caf8-8144-4fc0-bdaa-5a164d040ff1": {
+      "type": "custom-content",
+      "blocks": {
+        "template--16178815172834__e195caf8-8144-4fc0-bdaa-5a164d040ff1-1668060258b869a2ad-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Talk about your brand",
+            "subheading": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "template--16178815172834__e195caf8-8144-4fc0-bdaa-5a164d040ff1-1668060258b869a2ad-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20230103-114634.jpg",
+            "link": "shopify:\/\/pages\/look-book",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "ed30ba1a-4dbc-40b7-b876-f28696b04bb7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_1f736081-b31e-4dfe-9428-8a4ca9550a5c.jpg",
+            "link": "shopify:\/\/collections\/just-landed",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16178815172834__e195caf8-8144-4fc0-bdaa-5a164d040ff1-1668060258b869a2ad-0",
+        "template--16178815172834__e195caf8-8144-4fc0-bdaa-5a164d040ff1-1668060258b869a2ad-1",
+        "ed30ba1a-4dbc-40b7-b876-f28696b04bb7"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "gap": 5,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 3,
+        "custom_class": ""
+      }
+    },
+    "86041513-4359-4a55-a951-d8894a812680": {
+      "type": "custom-content",
+      "disabled": true,
+      "blocks": {
+        "template--16178815172834__86041513-4359-4a55-a951-d8894a812680-166806459372be25e7-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Talk about your brand",
+            "subheading": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "template--16178815172834__86041513-4359-4a55-a951-d8894a812680-166806459372be25e7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8_5bbc0cf8-e040-4b1b-9901-8042c2bb1cce.jpg",
+            "link": "shopify:\/\/collections\/70-off",
+            "width": "100%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16178815172834__86041513-4359-4a55-a951-d8894a812680-166806459372be25e7-0",
+        "template--16178815172834__86041513-4359-4a55-a951-d8894a812680-166806459372be25e7-1"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "gap": 0,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": ""
+      }
+    },
+    "cc53fcb5-320f-4af3-ad1a-5aa503e8921c": {
+      "type": "slider",
+      "disabled": true,
+      "blocks": {
+        "template--16689519034594__cc53fcb5-320f-4af3-ad1a-5aa503e8921c-16697062343fe9c9c5-0": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/pc_aa1c09ba-ad4d-4e39-906e-a1ec8200ef30.jpg",
+            "mb_background": "shopify:\/\/shop_images\/mobile_e009af2e-a4be-419e-a7d1-632cb452bc81.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "shopify:\/\/collections\/blowout-sale",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "template--16689519034594__cc53fcb5-320f-4af3-ad1a-5aa503e8921c-16697062343fe9c9c5-1": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "New Collection",
+            "description": "<p>Tell your campaign through images<\/p>",
+            "image_link": "",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "template--16689519034594__cc53fcb5-320f-4af3-ad1a-5aa503e8921c-16697062343fe9c9c5-2": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "New Collection",
+            "description": "<p>Tell your campaign through images<\/p>",
+            "image_link": "",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16689519034594__cc53fcb5-320f-4af3-ad1a-5aa503e8921c-16697062343fe9c9c5-0",
+        "template--16689519034594__cc53fcb5-320f-4af3-ad1a-5aa503e8921c-16697062343fe9c9c5-1",
+        "template--16689519034594__cc53fcb5-320f-4af3-ad1a-5aa503e8921c-16697062343fe9c9c5-2"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": false,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": ""
+      }
+    },
+    "c99cf609-032e-480a-b10a-9d21fc3f769e": {
+      "type": "slider",
+      "blocks": {
+        "template--16178815172834__c99cf609-032e-480a-b10a-9d21fc3f769e-1669017601a984f234-0": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/001_04aa7655-f9b6-4f04-a283-a76ff35e1977.jpg",
+            "mb_background": "shopify:\/\/shop_images\/002_069d6152-4a2d-4e99-9676-3cc1e3d8f5f8.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "shopify:\/\/collections\/original",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "template--16178815172834__c99cf609-032e-480a-b10a-9d21fc3f769e-1669017601a984f234-1": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "New Collection",
+            "description": "<p>Tell your campaign through images<\/p>",
+            "image_link": "",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "template--16178815172834__c99cf609-032e-480a-b10a-9d21fc3f769e-1669017601a984f234-2": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "New Collection",
+            "description": "<p>Tell your campaign through images<\/p>",
+            "image_link": "",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16178815172834__c99cf609-032e-480a-b10a-9d21fc3f769e-1669017601a984f234-0",
+        "template--16178815172834__c99cf609-032e-480a-b10a-9d21fc3f769e-1669017601a984f234-1",
+        "template--16178815172834__c99cf609-032e-480a-b10a-9d21fc3f769e-1669017601a984f234-2"
+      ],
+      "settings": {
+        "container": "container",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": ""
+      }
+    },
+    "1656561083981948f4": {
+      "type": "custom-content",
+      "disabled": true,
+      "blocks": {
+        "4ea8e0fa-0399-436c-a822-b6de214b4083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PC-06-Insta_Picks.jpg",
+            "link": "shopify:\/\/collections\/instagram-picks",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "6d196541-4bd1-4224-bdf5-0c6266096b0f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PC-07-Just_Landed.jpg",
+            "link": "shopify:\/\/collections\/just-landedupdating",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "4ea8e0fa-0399-436c-a822-b6de214b4083",
+        "6d196541-4bd1-4224-bdf5-0c6266096b0f"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 5,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 2,
+        "custom_class": ""
+      }
+    },
+    "165655999509d773db": {
+      "type": "custom-content",
+      "blocks": {
+        "6be6bdef-b8e9-4f61-8dac-5fea308f7aed": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_link": "https:\/\/www.youtube.com\/watch?v=57n5AiLJAHs",
+            "ratio": "16:9",
+            "video_title": "",
+            "text_size": "medium",
+            "text_color": "white",
+            "play_style": "solid",
+            "play_size": "medium",
+            "autoplay": true,
+            "loop": false,
+            "muted": true,
+            "width": "100%",
+            "alignment": "start",
+            "block_custom_class": ""
+          }
+        },
+        "ed4f4ac0-f914-4df6-b5b6-942b6a7df64d": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "subheading": "<div class=\"text\" id=\"Vtext\">\n    <span class=\"textSpan\">The <strong>Supermade<\/strong> is curated to provide high-quality, affordable, gender-neutral\n        streetwear.<br> Our fashion-forward, empowered designers are inspired from a global perspective.<\/span>\n    <\/div>\n\n    <script>\n    (function(){\n        reSetVtext();\n        setTimeout(()=>{\n            reSetVtext();\n            $(window).on('resize',function(){\n                reSetVtext();\n            })\n        },1000)\n    })()\n    function reSetVtext(){\n        let Vtext = document.getElementById(\"Vtext\");\n        let windowW = window.innerWidth;\n        let scale = 1\n        if(windowW>=1024){\n            scale = windowW\/1920\n        \/\/ }else if(windowW>512){\n        \/\/     scale = windowW\/1024\n        }else{\n            scale = windowW\/375\n        }      \n        Vtext.style.transform = 'scale('+scale+')';\n    }\n    <\/script>",
+            "text": "<p><\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "f32101d7-755a-46d3-a6cd-2640df40d29c": {
+          "type": "html",
+          "settings": {
+            "code": "<video class=\"media lazy  \" autoplay=\"autoplay\" muted=\"\" controls=\"controls\" playsinline=\"\" webkit-playsinline=\"\" style=\"width:100%;\">\n    <source data-src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/13fd1bed665e4e129b4515f1665f958d.mp4\">\n  <\/source><\/video>",
+            "width": "100%",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "6be6bdef-b8e9-4f61-8dac-5fea308f7aed",
+        "ed4f4ac0-f914-4df6-b5b6-942b6a7df64d",
+        "f32101d7-755a-46d3-a6cd-2640df40d29c"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "gap": 0,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": "VideoAndText"
+      }
+    },
+    "16620006387b88e1ad": {
+      "type": "custom-inter-wall",
+      "disabled": true,
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    },
+    "1672717796bb3ef783": {
+      "type": "apps",
+      "blocks": {
+        "69240f0d-7802-4059-b424-45855953cb5b": {
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "gallery_embed_id": 220031,
+            "show_text": true,
+            "title_text": "@THESUPERMADE",
+            "title_color": "#231f20",
+            "title_size": 20,
+            "subtitle_text": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": 14,
+            "text_alignment": "left",
+            "margin": 20,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "69240f0d-7802-4059-b424-45855953cb5b"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "custom_class": "width95"
+      }
+    },
+    "16225125199f82d8fe": {
+      "type": "icon-box",
+      "blocks": {
+        "16225125199f82d8fe-0": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20220302-153006.png",
+            "image_by_url": "",
+            "title": "FREE SHIPPING ON ORDER $99+",
+            "description": "<p><\/p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "16225125199f82d8fe-1": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20220302-152958.png",
+            "image_by_url": "",
+            "title": "HASSLE-FREE RETURN",
+            "description": "<p><\/p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "16225125199f82d8fe-2": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20220302-160334.png",
+            "image_by_url": "",
+            "title": "100% SECURE CHECKOUT",
+            "description": "<p><\/p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "71deafbb-3baf-443a-a087-3f7b8af7b9fa": {
+          "type": "iconbox",
+          "disabled": true,
+          "settings": {
+            "image_by_url": "",
+            "title": "Flexible Payment",
+            "description": "<p>Pay with Multiple Credit Cards<\/p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "16225125199f82d8fe-0",
+        "16225125199f82d8fe-1",
+        "16225125199f82d8fe-2",
+        "71deafbb-3baf-443a-a087-3f7b8af7b9fa"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "item_per_row": 3,
+        "item_gap": 20,
+        "item_gap_mobile": 0,
+        "card_style": "horizontal",
+        "image_max_width": "24px",
+        "content_alignment": "start",
+        "hover_effect": "scaling-up",
+        "enable_slider": false,
+        "show_pagination": true,
+        "show_navigation": true,
+        "use_scroll_mobile": false,
+        "use_grid_column_mb": false,
+        "custom_class": "my-highlights gray-items"
+      }
+    }
+  },
+  "order": [
+    "1621243260e1af0c20",
+    "f461491e-023b-4056-b36b-b84ed6be86aa",
+    "165656068271966e6d",
+    "1656411378e109fa4a",
+    "16564664091e467c89",
+    "e195caf8-8144-4fc0-bdaa-5a164d040ff1",
+    "86041513-4359-4a55-a951-d8894a812680",
+    "cc53fcb5-320f-4af3-ad1a-5aa503e8921c",
+    "c99cf609-032e-480a-b10a-9d21fc3f769e",
+    "1656561083981948f4",
+    "165655999509d773db",
+    "16620006387b88e1ad",
+    "1672717796bb3ef783",
+    "16225125199f82d8fe"
+  ]
+}

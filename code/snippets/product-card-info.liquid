@@ -1,0 +1,57 @@
+<div class="mt-3 lg:mt-5">  
+  <div class="ProductColorShow" style="display:flex">
+    {%- for option in product.options_with_values -%}
+      {% assign downcased_option = option.name | downcase %}
+      <input type="hidden" value="{{ downcased_option }}">
+      {%- if downcased_option contains 'color' -%}
+        {%- for colorData in option.values -%}
+          <span data-color="{{ colorData | downcase }}"></span>
+        {%- endfor -%}
+      {%- endif -%}      
+    {%- endfor -%}
+  </div> 
+
+  <div class="max-w-full w-full">
+    {%- if show_vendor -%}
+      <span class="sf__pcard-vendor block uppercase text-xs mb-2">{{ product.vendor }}</span>
+    {%- endif -%}
+    {% if show_title == true %}
+      <h3 class="block text-base" style="font-size:1.1rem;margin-bottom: -5px;">
+        <a href="{{ product.url }}" class="block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary"><b>SuperMade</b><span style="vertical-align: text-top; font-size:0.8rem;">®</span></a>
+      </h3>
+      <h3 class="block text-base">
+        <a href="{{ product.url }}" class="block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary{% if settings.uppercase_prd_name %} uppercase{% endif %}">
+          {{ product.title | replace: "The Supermade","" }}
+        </a>
+      </h3>
+    {% endif %}
+ {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}
+    {% if settings.show_review_badge %}
+      <div class="sf-pcard__reviews">
+        {% render 'product-reviews-app__badge', product: product %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="sf__pcard-price leading-normal">
+    {% render 'product-prices', product: product, is_product_card: true  %}
+  </div>
+  {% comment %}
+    {% if request.path contains 'bfcm' %}
+      <p style="font-size: 11px;font-weight: 600;line-height: 15.4px;margin-top: 6px;color: rgb(157, 34, 38);">Flat 50% off, no code needed</p>
+    {% elsif product.title contains 'Qatar' %}  
+      <p style="font-size: 11px;font-weight: 600;line-height: 15.4px;margin-top: 6px;color: rgb(157, 34, 38);">Buy 2 Get 1 Free</p>
+    {% endif %}
+  
+    {% if product.title contains 'Qatar' %}  
+      <p style="font-size: 11px;font-weight: 600;line-height: 15.4px;margin-top: 6px;color: rgb(157, 34, 38);">Buy 2 Get 1 Free</p>
+    {% else %}
+      <p style="font-size: 11px;font-weight: 600;line-height: 15.4px;margin-top: 6px;color: rgb(157, 34, 38);">50%-70% Off Everything | Prices As Marked</p>
+    {% endif %}
+    {% endcomment %}
+    
+    {% comment %} <p class="blackFridayText" style="font-size: 11px;font-weight: 600;line-height: 15.4px;margin-top: 6px;color: rgb(157, 34, 38);">Sales End Today | 70%-80% OFF EVERYTHING</p> {% endcomment %}
+    
+
+  {% render 'product-card-variant-option', product: product %}
+</div>

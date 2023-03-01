@@ -1,0 +1,327 @@
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "text_alignment": "center",
+        "hide_current": true,
+        "hide_on_mb": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_saving": true
+          }
+        },
+        "5eb20b16-153c-4a64-805e-f4297dd23508": {
+          "type": "shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "locale_option": "manual",
+            "locale_fallback": "en-us",
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "0"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_title": "Size"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": false
+          }
+        },
+        "aabcc496-4c15-4c9e-bee0-4a22ad48207e": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/description.jpg",
+            "image_link": "",
+            "image_width": 100,
+            "image_alignment": "start"
+          }
+        },
+        "bf119d9d-57d5-4ae7-af19-0a19195a4312": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20220429-154245.jpg",
+            "image_link": "",
+            "image_width": 100,
+            "image_alignment": "start"
+          }
+        },
+        "59bb5881-206b-43bd-bb0e-ceb5802da881": {
+          "type": "foxkit_stock_countdown",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "d4b83b07-64b5-4732-ba27-62e2d857b506": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "2022 is a tough year for growth. To allow our employees to have a pleasant paid holiday while we perform factory automation upgrades, several of our warehouses and factories in East Asia will be closed for up to a month this year. For orders placed on or after January 17th for non-stock items, we will start shipping in late February.\n<br><br>\nTo make up for your wait, we will send you a complimentary accessory and a $20 no-threshold discount coupon with your package.\n<br><br>\nDear trendsetters, The Supermade thank you for your company and we will continue to strive to provide you with excellent service and trendy clothing in the future."
+          }
+        },
+        "837f736b-667f-4d40-9aa3-0281a1995d8c": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"width:100%;background:#f7f7f7;padding:20px; box-sizing:border-box;\">\n    <p>\n        <span style=\"width: 24px;display: inline-block;\"><img style=\"width: 100%;display: block;transform: translateY(3px);\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0610\/7208\/1122\/files\/20221228-112434.png?v=1672197905\" \/><\/span>\n        Free Returns.Purchases through 1\/1\/23 can be returned up until 1\/31\/23\n    <\/p>\n    <p>\n        <span style=\"width: 24px;display: inline-block;\"><img style=\"width: 100%;display: block;transform: translateY(7px);\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0610\/7208\/1122\/files\/20221228-112449.png?v=1672197903\" \/><\/span>\n        Free Express Delivery Over $150\n    <\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "5eb20b16-153c-4a64-805e-f4297dd23508",
+        "variant_picker",
+        "buy_buttons",
+        "aabcc496-4c15-4c9e-bee0-4a22ad48207e",
+        "bf119d9d-57d5-4ae7-af19-0a19195a4312",
+        "59bb5881-206b-43bd-bb0e-ceb5802da881",
+        "d4b83b07-64b5-4732-ba27-62e2d857b506",
+        "837f736b-667f-4d40-9aa3-0281a1995d8c"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "layout": "layout-4",
+        "show_atwl": false,
+        "enable_history_state": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": false,
+        "show_nav_media_mobile": true,
+        "show_pagination_mobile": true,
+        "use_sticky_atc": false,
+        "use_sticky_atc_on_mobile": false,
+        "enable_dynamic_checkout": true,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": false
+      }
+    },
+    "product-details-tabs": {
+      "type": "product-details-tabs",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "header": "Details"
+          }
+        },
+        "c06c1f48-bcbe-4671-b335-811493424852": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "header": "Free Gift With Purchase",
+            "content": "<p>Free socks for order over $99<\/p><p>Free necklace for order over $129<\/p><p>Free Bracelet for order over $199<\/p><p>Free Tee for order over $239<\/p><p>Apply for all product on site. Buy more gift bigger!<\/p><p>Note: The offer cannot be used together with other promotion offers.<\/p>",
+            "content_page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "header": "Delivery",
+            "content": "",
+            "content_page": ""
+          }
+        },
+        "8f1daceb-de7e-4f84-8501-f8eeab6f4a4a": {
+          "type": "tab",
+          "settings": {
+            "header": "Returns",
+            "content": "<p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.<\/p>",
+            "content_page": "return-exchange"
+          }
+        },
+        "79297d1d-a588-478d-a3b1-1316bb7d9620": {
+          "type": "reviews",
+          "settings": {
+            "header": "Reviews",
+            "container": "container-fluid",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "c06c1f48-bcbe-4671-b335-811493424852",
+        "tab",
+        "8f1daceb-de7e-4f84-8501-f8eeab6f4a4a",
+        "79297d1d-a588-478d-a3b1-1316bb7d9620"
+      ],
+      "settings": {
+        "container": "container",
+        "bg_color": "",
+        "default_open": true
+      }
+    },
+    "1649947614943ccb01": {
+      "type": "foxkit-related-product",
+      "disabled": true,
+      "settings": {
+        "container": "container-fluid",
+        "columns": 4,
+        "column_gap": 30,
+        "enable_slider": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "container": "container-fluid",
+        "heading": "You Might Also Like",
+        "limit": 8,
+        "columns": 6,
+        "column_gap": 20,
+        "enable_slider": true
+      }
+    },
+    "recent-viewed-products": {
+      "type": "recent-viewed-products",
+      "settings": {
+        "container": "container-fluid",
+        "heading": "Recently Viewed",
+        "limit": 20,
+        "columns": 5,
+        "column_gap": 20,
+        "enable_slider": true
+      }
+    },
+    "16462971631a8a3d96": {
+      "type": "instagram",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "subheading": "@Thesupermade",
+        "description": "<p>\n\t<u><a href=\"https:\/\/www.thesupermade.com\/pages\/instagram-trending\"><span style=\"font-size:9px;\">VIEW MORE<span style=\"font-size:9px;\"><span style=\"font-size:9px;\"><\/span><\/span><\/span><\/a><\/u><u><\/u><u><\/u> \n<\/p>",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "layout": "grid",
+        "images_count": 4,
+        "grid_columns": 4,
+        "gap": 0,
+        "mobile_gap": 0,
+        "profile": "https:\/\/www.instagram.com\/thesupermade",
+        "button_label": "",
+        "custom_class": ""
+      }
+    },
+    "1648013828dabe8517": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "a4c384b0-1dc9-49e9-acbf-ddaa848998cb": {
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "gallery_embed_id": 0,
+            "show_text": false,
+            "title_text": "Covet.pics gallery",
+            "title_color": "#000000",
+            "title_size": 22,
+            "subtitle_text": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 20,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "a4c384b0-1dc9-49e9-acbf-ddaa848998cb"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "custom_class": ""
+      }
+    },
+    "165242152155adb702": {
+      "type": "apps",
+      "blocks": {
+        "653a0a0f-2f2f-4c1e-b465-8552a555aa08": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/ugc_media_grid\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "653a0a0f-2f2f-4c1e-b465-8552a555aa08"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "background_color": "",
+        "custom_class": ""
+      }
+    },
+    "1658483152fbec2cd2": {
+      "type": "custom-content",
+      "blocks": {
+        "27e085a1-898f-4c26-ae04-b2446456e8c4": {
+          "type": "html",
+          "settings": {
+            "code": "<script>\n    var ua = navigator.userAgent;\n    var ipad = ua.match(\/(iPad).*OS\\s([\\d_]+)\/),\n    isIphone = !ipad && ua.match(\/(iPhone\\sOS)\\s([\\d_]+)\/),\n    isAndroid = ua.match(\/(Android)\\s+([\\d.]+)\/),\n    isMobile = isIphone || isAndroid;\n  \n    window.Cloud = {\n      language: 'en',\n      device: isMobile ? 'M':'pc',\n      COUNTRY_CODE: $('.currency-option').val(),    \n      sitename:'48806'\n    }\n  <\/script>\n  <script src=\"\/\/cdn.shopify.com\/s\/files\/1\/0610\/7208\/1122\/t\/24\/assets\/op-analytics.js?v=118671256134864980591657855836753\"><\/script>      \n  <script type=\"text\/javascript\">     \n    (function(){\n        \/\/ let timer = setInterval(()=>{\n        \/\/     $('.product-recommendations .swiper-slide').find('a').each(function(){\n        \/\/         let $a = $(this);\n        \/\/         $a.attr({'target':'_blank'});\n        \/\/         clearInterval(timer);\n        \/\/     })\n            \n        \/\/ },500)\n        \n    })()  \n    var OPDataReport = function(opts) {\n        this.initializeVariables()\n        typeof jQuery !== 'undefined' && typeof OPAnalytics !== 'undefined' && this.init()\n    }\n  \n    OPDataReport.vars = {}\n  \n    OPDataReport.prototype = {\n        constructor: OPDataReport,\n        initializeVariables: function() {\n            var vals = OPDataReport.vars\n            for (var name in vals) {\n                if (vals.hasOwnProperty(name)) {\n                    this[name] = vals[name]\n                }\n            }\n        },\n        \n        detailDataReport: function() {\n            var menu = $('.product-single__title').text();          \n            OPAnalytics.track({\n                name: 'supermade:detail_youmayalsolike_exposure',\n                url: window.location.href,\n                sitename: Cloud ? Cloud.siteId : window.location.hostname,\n                page: 'detail',\n                menu: menu,\n                bindedEl: 'window',\n                targetEl: '.product-recommendations .swiper-slide',\n                action: 'EXPOSE',\n                desc: '',\n                hostname: ''\n            })\n            OPAnalytics.track({\n                name: 'supermade:detail_youmayalsolike_click',\n                url: window.location.href,\n                sitename: Cloud ? Cloud.siteId : window.location.hostname,\n                page: 'detail',\n                menu: menu,\n                bindedEl: 'document',\n                targetEl: '.product-recommendations .swiper-slide',\n                action: 'CLICK',\n                desc: '',\n                hostname: ''\n            })  \n            OPAnalytics.track({\n                name: 'supermade:detail_product_view',\n                url: window.location.href,\n                sitename: Cloud ? Cloud.siteId : window.location.hostname,\n                page: 'detail',\n                menu: menu,\n                bindedEl: 'document',\n                targetEl: '',\n                action: 'VIEW',\n                desc: $('#productSpu').val() || '',\n                hostname: ''\n            })\n            OPAnalytics.track({\n                name: 'supermade:detail_addtocart_click',\n                url: window.location.href,\n                sitename: Cloud ? Cloud.siteId : window.location.hostname,\n                page: 'detail',\n                menu: menu,\n                bindedEl: 'document',\n                targetEl: '.add-to-cart',\n                action: 'CART',\n                desc: 'add to cart',\n                hostname: ''\n            })\n            if(Cloud.device === 'M') {\n                OPAnalytics.track({\n                    name: 'supermade:detail_scrolltop_click',\n                    url: window.location.href,\n                    sitename: Cloud ? Cloud.siteId : window.location.hostname,\n                    page: 'detail',\n                    menu: menu,\n                    bindedEl: 'document',\n                    targetEl: '#scroll-to-top-button',\n                    action: 'CLICK',\n                    desc: 'scroll to top',\n                    hostname: ''\n                })\n            }\n        },\n  \n        init: function() {\n            var self = this;\n            $(document).ready(function() {\n              \/\/ 根据URL判断页面类型 执行对应的埋点\n                \n  \n              \/\/ goods detail\n              self.detailDataReport();\n              window.currentPage = 'detail'\n              \n            })\n        }\n    }\n    new OPDataReport();\n  \n    (function() {\n        if(typeof Utils !== 'undefined') {\n            var utmArr = [\"utm_source\", \"utm_medium\", \"utm_campaign\", \"utm_term\", \"utm_adset\", \"utm_content\", \"browser_mode\"];\n            var i, utils;\n            var queryObj = Utils.getGet()\n            for (i=0; i< utmArr.length; i++) {\n                var item = utmArr[i]\n                if(typeof Utils === 'function') {\n                    utils = new Utils();\n                } else {\n                    utils = Utils;\n                }\n                if(queryObj[item]) {\n                    utils.setCookie(item, queryObj[item], 86400 * 7)\n                }\n            }\n        }\n    })();\n  <\/script>",
+            "width": "100%",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "27e085a1-898f-4c26-ae04-b2446456e8c4"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 0,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": "hide"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "product-details-tabs",
+    "1649947614943ccb01",
+    "product-recommendations",
+    "recent-viewed-products",
+    "16462971631a8a3d96",
+    "1648013828dabe8517",
+    "165242152155adb702",
+    "1658483152fbec2cd2"
+  ]
+}

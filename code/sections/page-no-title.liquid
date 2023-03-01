@@ -1,0 +1,14 @@
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script>
+  window.a_pages = {
+    'useremail': "{{customer.email}}"
+  }
+</script>
+{%- if page.content != blank -%}
+  <div class="container mx-auto xl:pb-16 sm:pb-10 pb-8">
+    <div class="prose">
+      {{ page.content }}
+    </div>
+  </div>
+{%- endif -%}

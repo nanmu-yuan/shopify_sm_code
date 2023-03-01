@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-search",
+      "settings": {
+      }
+    },
+    "16588271501682c08b": {
+      "type": "custom-content",
+      "blocks": {
+        "42cab550-443f-474a-b5ba-73151428c584": {
+          "type": "html",
+          "settings": {
+            "code": "<script>\n    var ua = navigator.userAgent;\n    var ipad = ua.match(\/(iPad).*OS\\s([\\d_]+)\/),\n    isIphone = !ipad && ua.match(\/(iPhone\\sOS)\\s([\\d_]+)\/),\n    isAndroid = ua.match(\/(Android)\\s+([\\d.]+)\/),\n    isMobile = isIphone || isAndroid;\n  \n  window.Cloud = {\n  language: 'en',\n  device: isMobile ? 'M':'pc',\n  COUNTRY_CODE: $('.currency-option').val(),    \n  sitename:'48806'\n  }\n  <\/script>\n  <script src=\"\/\/cdn.shopify.com\/s\/files\/1\/0610\/7208\/1122\/t\/24\/assets\/op-analytics.js?v=118671256134864980591657855836753\"><\/script>      \n  <script type=\"text\/javascript\">\n  (function(){\n\/\/   let timer = setInterval(()=>{\n\/\/     $('.container .sf__pcard').find('a').each(function(){\n\/\/         let $a = $(this);\n\/\/         $a.attr({'target':'_blank'});\n\/\/         clearInterval(timer);\n\/\/     })\n    \n\/\/   },500)\n  \n  })()  \n  var OPDataReport = function(opts) {\n  this.initializeVariables()\n  typeof jQuery !== 'undefined' && typeof OPAnalytics !== 'undefined' && this.init()\n  }\n  \n  OPDataReport.vars = {}\n  \n  OPDataReport.prototype = {\n  constructor: OPDataReport,\n  initializeVariables: function() {\n      var vals = OPDataReport.vars\n      for (var name in vals) {\n          if (vals.hasOwnProperty(name)) {\n              this[name] = vals[name]\n          }\n      }\n  },      \n  listDataReport: function() {\n    var menu = $('.page-header__title').text(),  info = document.title;\n    OPAnalytics.track({\n        name: 'supermade:list_' + info + '_exposure',\n        url: window.location.href,\n        sitename: Cloud ? Cloud.siteId : window.location.hostname,\n        page: 'list',\n        menu: menu,\n        bindedEl: 'window',\n        targetEl: '.container .sf__pcard',\n        action: 'EXPOSE',\n        desc: '',\n        hostname: ''\n    })\n    OPAnalytics.track({\n        name: 'supermade:list_' + info + '_exposure',\n        url: window.location.href,\n        sitename: Cloud ? Cloud.siteId : window.location.hostname,\n        page: 'list',\n        menu: menu,\n        bindedEl: 'window',\n        targetEl: '.container .sf__pcard',\n        action: 'CLICK',\n        desc: '',\n        hostname: ''\n    })\n    \n  },     \n  init: function() {\n      var self = this;\n      $(document).ready(function() {\n        self.listDataReport();\n        window.currentPage = 'list'   \n        \n      })\n  }\n  }\n  new OPDataReport();\n  \n  (function() {\n  if(typeof Utils !== 'undefined') {\n      var utmArr = [\"utm_source\", \"utm_medium\", \"utm_campaign\", \"utm_term\", \"utm_adset\", \"utm_content\", \"browser_mode\"];\n      var i, utils;\n      var queryObj = Utils.getGet()\n      for (i=0; i< utmArr.length; i++) {\n          var item = utmArr[i]\n          if(typeof Utils === 'function') {\n              utils = new Utils();\n          } else {\n              utils = Utils;\n          }\n          if(queryObj[item]) {\n              utils.setCookie(item, queryObj[item], 86400 * 7)\n          }\n      }\n  }\n  })();\n  <\/script>",
+            "width": "50%",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "42cab550-443f-474a-b5ba-73151428c584"
+      ],
+      "settings": {
+        "heading": "Custom content",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": "hide"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16588271501682c08b"
+  ]
+}

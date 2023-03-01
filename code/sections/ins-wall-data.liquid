@@ -1,0 +1,205 @@
+<div id="InsWallData" style="display:none;">   
+  <input type="hidden" value="{{ canonical_url }}" />
+  {% comment %} {{ section.blocks }} {% endcomment %}
+  {% if request.page_type == 'index' %}
+      {%- for block in section.blocks -%}
+          <div class="item">
+          <div class="Items_ugc__1vzac">
+              <div class="UGC_root__1je1R">
+                {%- unless block.settings.related_product_link == blank -%}
+                <a target="_blank"  href="{{ block.settings.related_product_link }}">
+                {%- endunless -%}
+                <img class="lazyload" data-src="{{ block.settings.ins_wall_image | img_url:'' }}">
+                {%- unless block.settings.related_product_link == blank -%}
+                </a>
+                {%- endunless -%}
+              <div class="UGC_product__3mbqf" style="position: absolute; left: {{ block.settings.product_tab_left }}%; top: {{ block.settings.product_tab_top }}%;">
+                {%- comment -%}
+                  {%- unless block.settings.related_product_link == blank -%}
+                  <a class="UGC_flag__N0EFH" target="_blank"  href="{{ block.settings.related_product_link }}"style="--delay:0s;">
+                  {%- endunless -%}
+                  <div>{{ block.settings.related_product_title }}</div>
+                  {%- endcomment -%}
+                  <svg aria-hidden="true" height="36" role="presentation"
+                  width="36" viewBox="0 0 36 36">
+                  <title>{{ block.settings.related_product_title }}</title>
+                  <use href="#icon-chevron-right"></use>
+                  </svg>
+                  {%- comment -%}
+                  {%- unless block.settings.related_product_link == blank -%}
+                  </a>
+                  {%- endunless -%}
+                  {%- endcomment -%}
+              </div>
+                  <div class="UGC_handlesWrap__1sUh1">
+                    {%- comment -%}
+                      {%- unless block.settings.related_KOL_link == blank -%}
+                          <a rel="noreferrer" target="_blank" class="UGC_handles__21Y_3 UGC_link__RCZel" target="_blank"  href="{{ block.settings.related_KOL_link }}" style="--delay:0.3s;">                        
+                          @{{ block.settings.related_KOL_title }}                        
+                          </a>
+                      {%- endunless -%}
+                      {%- endcomment -%}
+                  </div>
+                  <button class="UGC_toggle__1ALo5"type="button">
+                          <svg width="14" height="14" viewBox="0 0 14 14">
+                          <title>{{ block.settings.related_product_title }}</title>
+                          <g aria-hidden="true" stroke="none" stroke-width="1" fill="currentColor"
+                              fill-rule="evenodd">
+                              <path class="UGC_vertical__26ZfN" d="M14,6 L14,8 L0,8 L0,6 L14,6"></path>
+                              <path class="UGC_horizontal__2rxZM" d="M14,6 L14,8 L0,8 L0,6 L14,6"></path>
+                          </g>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+      {%- endfor -%}
+  {% elsif request.path contains 'on-the-grid' or request.path contains 'look-book' %}
+      {%- for block in section.blocks -%}
+          <div class="item">
+          <div class="Items_ugc__1vzac" data-height="{{ block.settings.height | upcase }}" data-size="{{ block.settings.size | upcase }}" data-color="{{ block.settings.color | upcase }}">
+          <div class="UGC_root__1je1R">
+            {%- unless block.settings.related_product_link == blank -%}
+            <a target="_blank"  href="{{ block.settings.related_product_link }}">
+            {%- endunless -%}
+            <img alt="{{ block.settings.related_product_title }}" src="{{ block.settings.ins_wall_image | img_url:'' }}" />
+            {%- unless block.settings.related_product_link == blank -%}
+            </a>
+            {%- endunless -%}
+          <div class="UGC_product__3mbqf" style="position: absolute; left: {{ block.settings.product_tab_left }}%; top: {{ block.settings.product_tab_top }}%;">        
+          {%- comment -%}
+          <a target="_blank" class="UGC_flag__N0EFH" href="{{ block.settings.related_product_link }}" style="--delay: 0.1s;" rel="noopener noreferrer">
+          <div>{{ block.settings.related_product_title }}</div>
+          {%- endcomment -%}
+          <svg aria-hidden="true" height="36" role="presentation" width="36" viewbox="0 0 36 36"> 
+          <title>{{ block.settings.related_product_title }}</title>
+          <use href="#icon-chevron-right"></use> </svg> 
+          {%- comment -%}
+          </a>
+          {%- endcomment -%}
+          </div>
+          {%- comment -%}
+          <div class="UGC_handlesWrap__1sUh1"><a target="_blank" rel="noopener noreferrer" class="UGC_handles__21Y_3 UGC_link__RCZel" href="{{ block.settings.related_KOL_link }}" style="--delay: 0.3s;"> @{{ block.settings.related_KOL_title }} </a></div>
+          {%- endcomment -%}
+          
+          <button aria-label="Click to display products in the image" class="UGC_toggle__1ALo5" type="button"><svg width="14" height="14" viewbox="0 0 14 14"> 
+          <title>{{ block.settings.related_product_title }}</title>
+          <g aria-hidden="true" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd"> <path class="UGC_vertical__26ZfN" d="M14,6 L14,8 L0,8 L0,6 L14,6"></path> <path class="UGC_horizontal__2rxZM" d="M14,6 L14,8 L0,8 L0,6 L14,6"></path> </g> </svg></button></div>
+          
+          </div>
+          </div>
+      {%- endfor -%}
+
+  {% elsif canonical_url contains 'show-ins-product' %}
+  <script>
+    (function(){
+      let thisUrl = location.href;
+      
+      
+
+      let kolData = [
+        {
+          'title':"{{ title }}",
+          'img':"{{ block.settings.ins_wall_image | img_url:'' }}",
+          'lolName':"{{ block.settings.related_KOL_title }}",
+          'kolLink':"{{ block.settings.related_KOL_link }}",
+          'pd1':product1
+        }
+      ]
+
+    })()
+
+  </script>
+  
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "⚡ Ins Wall Data",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Ins wall data"
+    }],
+    "blocks":[
+      {
+        "type":"InIinfo",
+        "name":"Ins image info",
+        "settings":[
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Block name"
+          },
+          {
+            "type": "image_picker",
+            "id": "ins_wall_image",
+            "label": "Image"
+          },
+          {
+              "type": "text",
+              "id": "related_product_title",
+              "label": "Related Product Title"
+          },
+          {
+              "type": "url",
+              "id": "related_product_link",
+              "label": "Related Product Link"
+          },
+          {
+              "type": "text",
+              "id": "related_KOL_title",
+              "label": "Related KOL Name"
+          },
+          {
+              "type": "url",
+              "id": "related_KOL_link",
+              "label": "Related KOL Link"
+          },
+          {
+              "type":"range",
+              "id":"product_tab_left",
+              "label": "Product Tab Left",
+              "default": 50,
+              "min": 10,
+              "max": 90,
+              "step": 1,
+              "unit": "%"        
+          },
+          {
+              "type":"range",
+              "id":"product_tab_top",
+              "label": "Product Tab Top",
+              "default": 50,
+              "min": 10,
+              "max": 90,
+              "step": 1,
+              "unit": "%"        
+          },
+          {
+            "type": "text",
+            "id": "height",
+            "label": "height"
+          },
+          {
+            "type": "text",
+            "id": "size",
+            "label": "size"
+          },
+          {
+            "type": "text",
+            "id": "color",
+            "label": "color"
+          }
+        ]
+      }
+    ] 
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

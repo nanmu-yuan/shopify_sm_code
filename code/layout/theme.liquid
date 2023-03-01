@@ -1,0 +1,636 @@
+{%- capture body_classes -%}
+template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} {{ template.name | append: '-' | append: handle }} {% if cart.item_count == 0 %}cart-empty{% endif %}
+{%- endcapture -%}
+
+{% liquid
+  assign enable_rtl = settings.enable_rtl
+  assign language_support_rtl = settings.language_support_rtl
+  if enable_rtl and language_support_rtl != blank
+    assign shop_locale = localization.language.iso_code
+    assign language_support_rtl_list = language_support_rtl | split: ','
+    assign is_rtl = language_support_rtl_list | where: shop_locale
+    if is_rtl.size > 0
+      assign enable_rtl = true
+    else
+      assign enable_rtl = false
+    endif
+  endif
+%}
+<!doctype html>
+<html
+  class="no-js supports-no-cookies"
+  lang="{{ request.locale.iso_code }}"
+  style="--sf-page-opacity: 1;"
+  data-template="{{ template.name }}"
+  {% if enable_rtl %}dir="rtl"{% endif %}
+>
+<head>
+
+{%comment%} ------------ ChinaAndWorld v. 725.22.1021 (SuperMade) ------------ {%endcomment%}
+    {% if template.name == 'index' %}{% endif %}
+    {% comment %}
+    <link rel="preconnect" href="https://cnandwd.com">
+    <link rel="preconnect" href="https://server.chinaandworld.com">
+    {% endcomment %}
+{%comment%} ------------ ChinaAndWorld v. 725.22.1021 (SuperMade) ------------ {%endcomment%}
+  
+<script>
+document.addEventListener('StartAsyncLoading',function(event){
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+  ttq.load('CBIBUURC77U5SSHCFS1G');
+  ttq.page();
+}(window, document, 'ttq');
+});
+</script>
+
+  
+  
+
+<!-- Global site tag (gtag.js) - Google Ads: 340937877 -->
+<script>
+  document.addEventListener('StartAsyncLoading',function(event){  
+  var resource = document.createElement('script'); 
+  resource.async = "true";
+  resource.src = "https://www.googletagmanager.com/gtag/js?id=AW-340937877";
+  var script = document.getElementsByTagName('script')[0];
+  script.parentNode.insertBefore(resource, script);
+        
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-340937877');
+  gtag('config', 'AW-10962315730');
+  gtag('config', 'G-VEW6NR578T');
+  })
+</script>
+
+
+{% comment %} <script>
+  gtag('event', 'page_view', {
+    'send_to': 'AW-340937877',
+    'value': 'replace with value',
+    'items': [{
+      'id': 'replace with value',
+      'google_business_vertical': 'retail'
+    }]
+  });
+</script>
+<script>
+  gtag('event', 'page_view', {
+    'send_to': 'AW-10962315730',
+    'value': 'replace with value',
+    'items': [{
+      'id': 'replace with value',
+      'google_business_vertical': 'retail'
+    }]
+  });
+</script> {% endcomment %}
+  
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<meta name="theme-color" content="{{ settings.color_primary }}">
+{%- if settings.use_favicon == true and settings.favicon != blank -%}
+  <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png">
+{%- endif -%}
+  {% render 'preload' %}
+  {% render 'SEO' %}
+  {% render 'social-meta-tags' %}
+  {% render 'font-face' %}
+  {% render 'critical-css' %}
+  {% render 'critical-scripts' %}
+  {% render 'style-tags' %}
+  {% render 'custom-code-head' %}
+
+  {% comment %} {% render 'content_for_header' %} {% endcomment %}
+  {% capture MyJsFunc %}load', function(){}{% endcapture %} {% capture MyJsFunc2%}document.addEventListener('StartAsyncLoading',function(event){asyncLoad();});if(window.attachEvent){%endcapture %} {% if template contains "index" or template contains "product" or template contains "collection" or page.url contains "pages" or blog.url contains "blogs" %} {{ content_for_header | replace: "load', asyncLoad",MyJsFunc | replace: 'if(window.attachEvent)', MyJsFunc2 | replace: 'src="//cdn.shopify.com/shopifycloud/', 'data-src="//cdn.shopify.com/shopifycloud/' | replace: 'DOMContentLoaded', 'StartPreviewBarLoading' }} {% else %} {{ content_for_header }} {% endif %}
+
+  <script>
+      window.lazySizesConfig = window.lazySizesConfig || {};
+      window.lazySizesConfig.loadMode = 1;
+      window.lazySizesConfig.expand = 10;
+      window.lazySizesConfig.loadHidden = false;
+  </script>
+  
+  <script src="{{ "jquery-2.2.3.min.js" | asset_url }}" ></script>
+  <script src="{{ "theme.js" | asset_url }}" ></script>   
+  <link rel="stylesheet" href="{{ "swiper-3.4.2.min.css" | asset_url }}"  />
+  <script {% if template contains "index" or template contains "collection" or template contains "product" %}defer{% endif %} src="{{ "swiper-3.4.2.jquery.min.js" | asset_url }}" ></script>
+
+{% render 'gsf-conversion-pixels' %}
+{% include "omega_multi_pixel" %} {% include 'sca.freegifts' %}
+{% include "omega_multi_pixel" %} </head>
+
+
+
+  
+<body
+  id="sf-theme" style="opacity: 0;"
+  class="{{ body_classes }} relative min-h-screen{% if customer %} customer-logged-in{% endif %}"
+  {% if template.name == 'product' %}data-product-id="{{ product.id }}"{% endif %}
+>
+{%comment%} ------------ ChinaAndWorld v. 721.22.2009 (SuperMade) ------------ {%endcomment%}
+    <script type="┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"></script>
+    <script type="┃    Made with ♡ by ChinaAndWorld  ┃"></script>
+    <script type="┃━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┃"></script>
+    <script type="┃   We connect China & the World   ┃"></script>
+    <script type="┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"></script>
+    <script type="   ChinaAndWorld v. 721.22.2009   "></script>
+
+    <script>
+      function setCookie(name,value,days) {
+        var expires = '';
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + (value || '')  + expires + '; path=/';
+      }
+      function getCookie(name) {
+        var nameEQ = name + '=';
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+      }
+      function eraseCookie(name) {   
+        document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      }
+    </script>
+{%comment%} ------------ ChinaAndWorld v. 721.22.2009 (SuperMade) ------------ {%endcomment%}
+  
+<script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} {% if product.first_available_variant.price %}window.KlarnaThemeGlobals.data_purchase_amount = {{ product.first_available_variant.price }};{% endif %}window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
+
+
+
+  {% render 'theme-data' %}
+  {% section 'annoucement' %}
+  {% section 'header' %}
+  {% section 'ins-wall-data' %}
+  {% render 'scroll-top-button' %}
+
+  <main role="main" id="MainContent">
+    {{ content_for_layout }}
+    <div id="cart-drawer-container"></div>
+  </main>
+
+  {% section 'footer' %}
+
+    <script src="//cdn.codeblackbelt.com/js/modules/frequently-bought-together/main.min.js?shop=hzuaiec.myshopify.com" defer></script>
+
+    
+
+    
+  {% section 'mobile-sticky-bar' %}
+
+  {% render 'custom-code-body' %}
+  {% render 'foxkit-messenger' %}
+  {% render 'script-tags' %}
+
+
+
+{%comment%} ------------ ChinaAndWorld v. 920.22.2245 (SuperMade) ------------ {%endcomment%}
+
+{% if template.name == "collection" %} 
+<script>
+  var elements = document.getElementsByClassName("max-w-full w-full");
+    console.log(elements);
+</script>
+{% endif %}
+
+<script data-src="https://cnandwd.com/server/server_client_files/thesupermade.com/main.js" defer="defer"></script>
+
+<!-- Parallel Testing Google tag (gtag.js) -->
+<script>
+  document.addEventListener('StartAsyncLoading',function(event){  
+  var resource = document.createElement('script'); 
+  resource.async = "true";
+  resource.src = "https://www.googletagmanager.com/gtag/js?id=G-PLVT84HG4Q";
+  var script = document.getElementsByTagName('script')[0];
+  script.parentNode.insertBefore(resource, script);
+      
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PLVT84HG4Q');
+  })
+</script>
+
+
+<script defer="defer" type="text/javascript"> {% comment %} Microsoft Clarity - by ChinaAndWorld - We use Clarity User ID in Cookie {% endcomment %}
+document.addEventListener('StartAsyncLoading',function(event){
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "dkgmi63mo6");
+});
+</script>
+<script defer="defer">
+  var chinaandworld_com_referrer = ""+encodeURIComponent(document.referrer);
+  var chinaandworld_com_canonical = document.querySelector("link[rel='canonical']").getAttribute("href");
+</script>
+
+<script>
+  console.log(Intl.DateTimeFormat().resolvedOptions());
+</script>
+
+<script defer="defer" {% if template contains "index" or template contains "collection" %}data-{% endif %}src="https://server.chinaandworld.com/site_service/javascript/main_sync.php?customer_email={{customer.email}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&orders_count={{customer.orders_count}}&total_spent={{customer.total_spent}}&phone={{customer.phone}}&id={{customer.id}}&accepts_marketing={{customer.accepts_marketing}}&addresses_count={{customer.addresses_count}}&tax_exempt={{customer.tax_exempt}}&canonical_url={{canonical_url}}&permanent_domain={{shop.permanent_domain}}"></script>
+<script defer="defer" {% if template contains "index" or template contains "collection" %}data-{% endif %}src="https://server.chinaandworld.com/site_service/javascript/main_async.php?customer_email={{customer.email}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&orders_count={{customer.orders_count}}&total_spent={{customer.total_spent}}&phone={{customer.phone}}&id={{customer.id}}&accepts_marketing={{customer.accepts_marketing}}&addresses_count={{customer.addresses_count}}&tax_exempt={{customer.tax_exempt}}&canonical_url={{canonical_url}}&permanent_domain={{shop.permanent_domain}}"></script>
+
+
+
+
+{%comment%} ---------------------------------------------- Page-Specific Script ---------------------------------------------- {%endcomment%}
+
+{% if template.name == 'index' %}
+<script type="application/ld+json">
+        {
+                "@context": "http://schema.org",
+                "@id": "https://www.thesupermade.com//#organization",
+                "@type": "Organization",
+                "name": "SuperMade",
+                "url": "https://www.thesupermade.com//",
+                "logo": "https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220302-162430_3609x.png",
+                "sameAs": [
+"https://www.facebook.com/thesupermade","https://www.youtube.com/channel/UCHKZ7FtynHJT6RPIq2mJ35A","https://www.thesupermade.com/"
+                ],
+                "subOrganization": {
+                        "@type": "Organization",
+                        "name": "Customer Support",
+                        "url": "https://www.thesupermade.com//",
+            "@id": "https://www.thesupermade.com//#organization"
+                },
+                "contactPoint": [
+                        {
+                                "@type": "ContactPoint",
+                                "email": "sales@thesupermade.com",
+                                "contactType": "sales",
+                                "areaServed": "US"
+                        },
+                        {
+                                "@type": "ContactPoint",
+                                "email": "tech@thesupermade.com",
+                                "contactType": "technical support",
+                                "areaServed": "US",
+                                "availableLanguage": ["EN", "ES"]
+                        },
+                        {
+                                "@type": "ContactPoint",
+                                "email": "support@thesupermade.com",
+                                "contactType": "customer support",
+                                "areaServed": "US",
+                                "availableLanguage": ["EN", "ES"]
+                        }
+                ]
+        }
+</script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.thesupermade.com/search",
+      "name": "SuperMade Search",
+      "potentialAction": [{
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.thesupermade.com/search?q={search_term_string}&scr=mc_google"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    }
+</script>
+{% endif %}
+
+{% if template.name == "search" %} 
+{%- if search.performed -%}
+{%- endif -%}
+{% endif %}
+
+{% if template.name == "collection" %} 
+{% endif %}
+
+{% if template.name == "article" %} 
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": {{article.title | json}},
+      "image": [
+        "{{article.image.src}}"
+       ],
+      "datePublished": {{article.published_at | json}},
+      "dateModified": {{updated_at | json}},
+      "articleBody": {{article.content | strip_html | json}},
+      "author": [{
+          "@type": "Person",
+          "name": {{article.author | json}},
+          "url": {{article.url | json}}
+        }]
+    }
+</script>
+{% endif %}
+
+{% if template.name == "product" %}
+
+{% comment %} Review Preparation {% endcomment %}
+{% if product.metafields.spr.reviews %}
+{% capture review_data %}{{product.metafields.spr.reviews }}{% endcapture %}
+{% assign keyword = '"reviewCount"' %}
+{% assign rd_a1 = review_data | split: keyword %} 
+{% assign rd_a2 = rd_a1[1] | split: "ratingValue" %}
+{% assign rd_a3 = rd_a2[1] | split: "itemReviewed" %}
+{% assign count1 = rd_a2[0] | split: ': "' %}
+{% assign count2 = count1[1] | split: '",' %}
+{% assign count = count2[0] %}
+{% assign product__reviews_count = count | plus: 1 | minus: 1 %}
+{% assign value1 = rd_a3[0] | split: ': "' %}
+{% assign value2 = value1[1] | split: '",' %}
+{% assign value = value2[0] %}
+{% assign product__reviews_value = value | plus: 1 | minus: 1 %}
+{% endif %}
+
+{% comment %} Validity Preparation {% endcomment %}
+{% assign date = 'today' | date: '%s' %}
+{% assign days = 90 | times: 24 | times: 60 | times: 60 %}
+
+
+<script id="product_schema" type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "offers": [{
+          "@type" : "Offer","availability" : "http://schema.org/InStock",
+          "price" : {{product.price | divided_by: 100.0}},
+          "priceCurrency" : "{{shop.currency}}",
+          "priceValidUntil": "{{ date | date: "%s" | plus: days | date: "%Y-%m-%d" }}",
+          "url" : "{{product.url}}",
+          "itemCondition" : "https://schema.org/NewCondition",
+          "shippingDetails" : {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "1"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "1",
+                "maxValue": "2"
+              },
+              "cutOffTime": "19:30-08:00",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [ "https://schema.org/Monday", "https://schema.org/Tuesday", "https://schema.org/Wednesday", "https://schema.org/Thursday", "https://schema.org/Friday", "https://schema.org/Saturday", "https://schema.org/Sunday" ]
+              }
+            }
+          }
+
+        }
+],
+    "brand": {
+      "@type": "Brand",
+      "name": "SuperMade"
+    },
+    "sku": {{product.handle | json}},
+    "mpn": {{product.handle | json}},
+    "name": "{{product.title}}",
+    "description": {{product.description | strip_html | json | replace: "\n","" }},
+    {% if product__reviews_value > 0 %} 
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": {{product__reviews_value}},
+      "reviewCount": {{product__reviews_count}}
+    },
+    {% endif %}
+    "url": "{{shop.url}}{{product.url}}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ product | image_url: width: 1024 }}",
+      "image": "{{ product | image_url: width: 1024 }}",
+      "name": "{{product.title}}",
+      "width": 1024,
+      "height": 1024
+    }
+  }
+</script>
+{% endif %}
+
+
+{%comment%} ---------------------------------------------- Tracking Scripts ---------------------------------------------- {%endcomment%}
+
+
+
+{%comment%} google dynamic remarketing tag for theme.liquid {%endcomment%}
+{% if template contains 'product' %}
+<script type="text/javascript">
+  var json_product = {{ product | json }};
+  console.log(json_product);
+</script>
+<script>
+  var ecomm_prodid=[];
+  for(var i=0;i<json_product.variants.length;i++)
+    ecomm_prodid.push(json_product.variants[i].id); // changed
+</script>
+<script type="text/javascript">
+  var event_name="view_item"
+  var google_tag_params = {
+    ecomm_prodid: ecomm_prodid,
+    ecomm_pagetype: 'product',
+    ecomm_totalvalue: parseFloat('{{ product.price | money_without_currency | remove: ","}}')
+  };
+</script>
+{% elsif template contains 'collection' %}
+<script type="text/javascript">
+  var event_name="view_item_list"
+  var google_tag_params = {
+    ecomm_pagetype: 'category'
+  };
+</script>
+{% elsif template contains 'cart' %}
+<script type="text/javascript">
+  var event_name="add_to_cart"
+  var id = new Array();
+  {% for item in cart.items %}
+  id.push('{{item.variant.id}}');
+   {% endfor %}
+
+   var google_tag_params = {
+     ecomm_prodid: id,
+     ecomm_pagetype: 'cart',
+     ecomm_totalvalue: parseFloat('{{ cart.total_price | money_without_currency | remove: ","}}')
+   };
+</script>
+{% elsif template contains 'search' %}
+<script type="text/javascript">
+  var event_name="view_search_results"
+  var google_tag_params = {
+    ecomm_pagetype: 'searchresults'
+  };
+</script>
+{% elsif template contains 'index' %}
+<script type="text/javascript">
+  var event_name="home"
+  var google_tag_params = {
+    ecomm_pagetype: 'home'
+  };
+</script>
+{% else %}
+<script type="text/javascript">
+  var google_tag_params = {
+    ecomm_pagetype: 'other'
+  };
+</script>
+{% endif %}
+
+<script>
+  document.addEventListener('StartAsyncLoading',function(event){
+  setTimeout(function() {
+  gtag('event','event_name', {
+    'ecomm_prodid':window.google_tag_params.ecomm_prodid,
+    'ecomm_pagetype':window.google_tag_params.ecomm_pagetype,
+    'ecomm_totalvalue':window.google_tag_params.ecomm_totalvalue,
+    'id': google_tag_params.ecomm_prodid, 
+    'google_business_vertical': 'retail',
+    'value': window.google_tag_params.ecomm_totalvalue
+  });
+  }, 2000);
+  });
+</script>
+
+
+<script>
+  document.addEventListener('StartAsyncLoading',function(event){
+  setTimeout(function() {
+  var _learnq = _learnq || [];
+  _learnq.push(['identify']);
+  _learnq.push(['track', 'Elected President']);
+  }, 1000);
+  });  
+</script>
+
+<script type="module"> {% comment %} Hotjar {% endcomment %}
+document.addEventListener('StartAsyncLoading',function(event){
+(function(h,o,t,j,a,r){
+  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  h._hjSettings={hjid:0,hjsv:6};
+  a=o.getElementsByTagName('head')[0];
+  r=o.createElement('script');r.async=1;
+  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+});
+</script>
+
+{% comment %} Microsoft UET Tag Tracking {% endcomment %}
+<script defer="defer">document.addEventListener('StartAsyncLoading',function(event){(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:""};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");});</script>
+
+{%comment%} ---------------------------------------------- Other Scripts ---------------------------------------------- {%endcomment%}
+<script type="text/javascript"> (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); })(window, document, "clarity", "script", "ektnkezl4z"); </script>
+
+{% comment %}
+<script type="module"> {% comment %} CLS FID LCP Scores {% endcomment %}
+(function() {
+  var script = document.createElement('script');
+  script.src = 'https://unpkg.com/web-vitals/dist/web-vitals.iife.js';
+  script.onload = function() {
+    // When loading `web-vitals` using a classic script, all the public
+    // methods can be found on the `webVitals` global namespace.
+    webVitals.getCLS(console.log);
+    webVitals.getFID(console.log);
+    webVitals.getLCP(console.log);
+  }
+  document.head.appendChild(script);
+}())
+</script>
+{% endcomment %}
+
+{%comment%} ------------ ChinaAndWorld v. 920.22.2245 (SuperMade) ------------ {%endcomment%}
+
+<script async data-src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Uq3TJB"></script>
+{% if template contains 'product' %} 
+<script id="viewed_product">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+{% endif %}  
+
+<script>
+  function load_transcy()
+  {
+    if(typeof(transcy_appEmbed) == 'undefined'){
+        transcy_apiURI = "https://api.transcy.io/api";
+        transcy_productId = "";
+        transcy_shopName = "SuperMade®";
+        transcy_currenciesPaymentPublish = [];
+        transcy_curencyDefault = "USD";transcy_currenciesPaymentPublish.push("AED");transcy_currenciesPaymentPublish.push("AFN");transcy_currenciesPaymentPublish.push("ALL");transcy_currenciesPaymentPublish.push("AMD");transcy_currenciesPaymentPublish.push("ANG");transcy_currenciesPaymentPublish.push("AUD");transcy_currenciesPaymentPublish.push("AWG");transcy_currenciesPaymentPublish.push("AZN");transcy_currenciesPaymentPublish.push("BAM");transcy_currenciesPaymentPublish.push("BBD");transcy_currenciesPaymentPublish.push("BDT");transcy_currenciesPaymentPublish.push("BGN");transcy_currenciesPaymentPublish.push("BIF");transcy_currenciesPaymentPublish.push("BND");transcy_currenciesPaymentPublish.push("BOB");transcy_currenciesPaymentPublish.push("BSD");transcy_currenciesPaymentPublish.push("BWP");transcy_currenciesPaymentPublish.push("BZD");transcy_currenciesPaymentPublish.push("CAD");transcy_currenciesPaymentPublish.push("CDF");transcy_currenciesPaymentPublish.push("CHF");transcy_currenciesPaymentPublish.push("CRC");transcy_currenciesPaymentPublish.push("CVE");transcy_currenciesPaymentPublish.push("CZK");transcy_currenciesPaymentPublish.push("DJF");transcy_currenciesPaymentPublish.push("DKK");transcy_currenciesPaymentPublish.push("DOP");transcy_currenciesPaymentPublish.push("DZD");transcy_currenciesPaymentPublish.push("EGP");transcy_currenciesPaymentPublish.push("ETB");transcy_currenciesPaymentPublish.push("EUR");transcy_currenciesPaymentPublish.push("FJD");transcy_currenciesPaymentPublish.push("FKP");transcy_currenciesPaymentPublish.push("GBP");transcy_currenciesPaymentPublish.push("GMD");transcy_currenciesPaymentPublish.push("GNF");transcy_currenciesPaymentPublish.push("GTQ");transcy_currenciesPaymentPublish.push("GYD");transcy_currenciesPaymentPublish.push("HKD");transcy_currenciesPaymentPublish.push("HNL");transcy_currenciesPaymentPublish.push("HRK");transcy_currenciesPaymentPublish.push("HUF");transcy_currenciesPaymentPublish.push("IDR");transcy_currenciesPaymentPublish.push("ILS");transcy_currenciesPaymentPublish.push("INR");transcy_currenciesPaymentPublish.push("ISK");transcy_currenciesPaymentPublish.push("JMD");transcy_currenciesPaymentPublish.push("JPY");transcy_currenciesPaymentPublish.push("KES");transcy_currenciesPaymentPublish.push("KGS");transcy_currenciesPaymentPublish.push("KHR");transcy_currenciesPaymentPublish.push("KMF");transcy_currenciesPaymentPublish.push("KRW");transcy_currenciesPaymentPublish.push("KYD");transcy_currenciesPaymentPublish.push("KZT");transcy_currenciesPaymentPublish.push("LAK");transcy_currenciesPaymentPublish.push("LBP");transcy_currenciesPaymentPublish.push("LKR");transcy_currenciesPaymentPublish.push("MAD");transcy_currenciesPaymentPublish.push("MDL");transcy_currenciesPaymentPublish.push("MKD");transcy_currenciesPaymentPublish.push("MMK");transcy_currenciesPaymentPublish.push("MNT");transcy_currenciesPaymentPublish.push("MOP");transcy_currenciesPaymentPublish.push("MUR");transcy_currenciesPaymentPublish.push("MVR");transcy_currenciesPaymentPublish.push("MWK");transcy_currenciesPaymentPublish.push("MYR");transcy_currenciesPaymentPublish.push("NGN");transcy_currenciesPaymentPublish.push("NIO");transcy_currenciesPaymentPublish.push("NPR");transcy_currenciesPaymentPublish.push("NZD");transcy_currenciesPaymentPublish.push("PEN");transcy_currenciesPaymentPublish.push("PGK");transcy_currenciesPaymentPublish.push("PHP");transcy_currenciesPaymentPublish.push("PKR");transcy_currenciesPaymentPublish.push("PLN");transcy_currenciesPaymentPublish.push("PYG");transcy_currenciesPaymentPublish.push("QAR");transcy_currenciesPaymentPublish.push("RON");transcy_currenciesPaymentPublish.push("RSD");transcy_currenciesPaymentPublish.push("RWF");transcy_currenciesPaymentPublish.push("SAR");transcy_currenciesPaymentPublish.push("SBD");transcy_currenciesPaymentPublish.push("SEK");transcy_currenciesPaymentPublish.push("SGD");transcy_currenciesPaymentPublish.push("SHP");transcy_currenciesPaymentPublish.push("SLL");transcy_currenciesPaymentPublish.push("STD");transcy_currenciesPaymentPublish.push("THB");transcy_currenciesPaymentPublish.push("TJS");transcy_currenciesPaymentPublish.push("TOP");transcy_currenciesPaymentPublish.push("TTD");transcy_currenciesPaymentPublish.push("TWD");transcy_currenciesPaymentPublish.push("TZS");transcy_currenciesPaymentPublish.push("UAH");transcy_currenciesPaymentPublish.push("UGX");transcy_currenciesPaymentPublish.push("USD");transcy_currenciesPaymentPublish.push("UYU");transcy_currenciesPaymentPublish.push("UZS");transcy_currenciesPaymentPublish.push("VND");transcy_currenciesPaymentPublish.push("VUV");transcy_currenciesPaymentPublish.push("WST");transcy_currenciesPaymentPublish.push("XAF");transcy_currenciesPaymentPublish.push("XCD");transcy_currenciesPaymentPublish.push("XOF");transcy_currenciesPaymentPublish.push("XPF");transcy_currenciesPaymentPublish.push("YER");
+        transcy_shopifyLocales = [{"shop_locale":{"locale":"en","enabled":true,"primary":true,"published":true}}];
+
+
+            let versionTC = "ext_4.0_1661422272745"; // call Date.now() let get version
+            let cdnScriptTC = typeof(transcy_cdn) != 'undefined' ? (transcy_cdn+'/store/assets/js/v3/main.js?v='+versionTC) : ('https://tc.cdnhub.co/store/assets/js/v3/main.js?v='+versionTC);
+            let cdnLinkTC = typeof(transcy_cdn) != 'undefined' ? (transcy_cdn+'/store/assets/css/v3/main.css?v='+versionTC) : ('https://tc.cdnhub.co/store/assets/css/v3/main.css?v='+versionTC);
+            let scriptTC = document.createElement('script');
+            scriptTC.type = 'text/javascript';
+            scriptTC.defer = true;
+            scriptTC.src = cdnScriptTC;
+            document.head.appendChild(scriptTC);
+
+            let linkTC = document.createElement('link');
+            linkTC.rel = 'stylesheet'; 
+            linkTC.type = 'text/css';
+            linkTC.href = cdnLinkTC;
+            document.head.appendChild(linkTC); 
+    }
+  }
+  if(window.innerWidth>0.42e3) load_transcy(); else document.addEventListener('StartAsyncLoading',function(event){load_transcy();});
+</script>  
+
+{% include 'judgeme_core' %} 
+
+<script defer src="{{ 'custom.min.js' | asset_url }}" ></script>
+  
+</body>
+</html>  

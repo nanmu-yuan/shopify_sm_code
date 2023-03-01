@@ -1,0 +1,214 @@
+
+<div class="comment-list">
+
+    {% for block in section.blocks %}
+        {% if block.type == 'comment' %}
+            <div class="list-item">
+                <div class="userInfo">
+                    <span class="img">
+                        <input type="hidden" value="{{block.settings.image}}" />
+                        {% if block.settings.image != blank %}
+                            <img src="{{block.settings.image}}" />
+                        {% else %}
+                            <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/default._CR0_0_1024_1024_SX48.jpg?v=1660816759" />
+                        {% endif %}
+                    </span>
+                    <span class="user">{{ block.settings.commentName }}</span>
+                </div>
+                <div class="commentInfo flex">            
+                    <div class="starts-list">
+
+                        {% assign commentStar = block.settings.commentStar | abs %}                        
+                        {% for i in (1..5) %}
+                            <div class="start {% if  i <= commentStar %}like{% endif %}">
+                                <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                            </div>
+                        {% endfor %}   
+
+                        <!-- <div class="start like">
+                            <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                            </div>
+                        <div class="start">
+                            <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                        </div>
+                        <div class="start">
+                            <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                        </div>
+                        <div class="start">
+                            <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                        </div>
+                        <div class="start">
+                            <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                        </div> -->
+                    </div>   
+                    <div class="title"> {{ block.settings.commentTitle }}</div>
+                </div>
+                <div class="date">{{ block.settings.commentDate }}</div>
+                <div class="comment">
+                    {{ block.settings.commentDescription }}
+                </div>        
+            </div> 
+
+        {% endif %}
+    {% endfor %}    
+
+    <!-- <div class="list-item">
+        <div class="userInfo">
+            <span class="img">
+                
+            </span>
+            <span class="user">Chris McGuinn</span>
+        </div>
+        <div class="commentInfo flex">            
+            <div class="starts-list">
+                <div class="start like">
+                    <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                    </div>
+                <div class="start">
+                    <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                </div>
+                <div class="start">
+                    <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                </div>
+                <div class="start">
+                    <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                </div>
+                <div class="start">
+                    <img src="https://cdn.shopify.com/s/files/1/0610/7208/1122/files/20220726-151342.png?v=1658987973" />
+                </div>
+            </div>   
+            <div class="title"> Dont listen to the haters [1 1/2 years later... listen to the haters...]</div>
+        </div>
+        <div class="date">2018年8月26日</div>
+        <div class="comment">
+            Honestly this chair has everything going for it except 2 major things.
+            1) the arm rest wobble side to side but not up and down. Can support arms but feels flimsy.
+            2) the seat cushion deflated really quickly (< 20 days) and isn't as supportive as hoped for. (Preface: I'm a 6' tall, 220lbs guy)
+            Update: after 7 months of ownership, the material on the chair has begun to split and separate leaving a pealing effect.
+            I wouldn't recommend this budget gaming chair unless those two things get fixed in future versions.
+        </div>        
+    </div>  -->
+
+</div>  
+
+
+<style>
+    
+    .comment-list{position: relative; max-width: 1024px; margin: 0 auto;}
+    .comment-list .list-item{width: 100%; position: relative;margin: 0 auto; padding: 40px 0; }
+    .comment-list .list-item .userInfo{display: flex;align-items: center;margin-bottom: 5px;}
+    .comment-list .list-item .userInfo .img{width: 34px; height: 34px; background-color: #eee;border-radius: 50px; margin-right: 9px;}
+    .comment-list .list-item .userInfo .img img{width: 100%;display: block;}
+    .comment-list .list-item .userInfo .user{flex: 1; font-size: 13px; line-height: 19px; color: #0F1111; align-items: center;}
+    .comment-list .list-item .commentInfo{display: flex; margin-bottom: 5px;}
+    .comment-list .list-item .starts-list{position: relative; display: flex; align-items: center;}
+    .comment-list .list-item .starts-list .start{position: relative; width: 20px;height: 20px;background: #ddd;margin-right: 10px;cursor: pointer;}
+    .comment-list .list-item .starts-list .start.like{background: green;}
+    .comment-list .list-item .starts-list .start img{display: block;width: 80%;height: 80%;position: absolute; top: 10%;left: 10%;}
+    .comment-list .list-item .commentInfo .title{font-size: 14px; line-height: 20px; color: #0F1111;}
+    .comment-list .list-item .date{margin-bottom: 5px;font-size: 14px; line-height: 20px; color: #565959;}
+    .comment-list .list-item .comment{font-size: 14px; line-height: 20px; color: #0F1111;}
+
+
+</style>
+<script>
+    (function(){
+        
+        
+        
+    })()
+</script>
+  
+{% schema %}
+    {
+        "name": "Page comment",
+        "settings": [],
+        "blocks":[
+        {
+            "type": "comment",
+            "name": "Comment",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "commentTitle",
+                    "label": "Title",
+                    "default": "comment title"
+                },
+                {
+                    "type": "textarea",
+                    "id": "commentDescription",
+                    "label": "Description",
+                    "default": "comment description"
+                },
+                {
+                    "type": "select",
+                    "id": "commentStar",
+                    "label": "Star",
+                    "default": "5",
+                    "options": [
+                        {
+                            "value": "5",
+                            "label": "5"
+                        },
+                        {
+                            "value": "4.5",
+                            "label": "4.5"
+                        },
+                        {
+                            "value": "4",
+                            "label": "4"
+                        },
+                        {
+                            "value": "3.5",
+                            "label": "3.5"
+                        },
+                        {
+                            "value": "3",
+                            "label": "3"
+                        },
+                        {
+                            "value": "2.5",
+                            "label": "2.5"
+                        },
+                        {
+                            "value": "2",
+                            "label": "2"
+                        },
+                        {
+                            "value": "1.5",
+                            "label": "1.5"
+                        },
+                        {
+                            "value": "1",
+                            "label": "1"
+                        },
+                        {
+                            "value": "0.5",
+                            "label": "0.5"
+                        }                       
+                    ]
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "HeadImage"
+                },
+                {
+                    "type": "text",
+                    "id": "commentName",
+                    "label": "Name",
+                    "default": "customer name"
+                },
+                {
+                    "type": "text",
+                    "id": "commentDate",
+                    "label": "Date",
+                    "default": "comment date"
+                }
+            ]
+          }
+        ]
+    }
+{% endschema %}
+  
+  

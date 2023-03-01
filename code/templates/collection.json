@@ -1,0 +1,375 @@
+{
+  "sections": {
+    "1651738243c6752c63": {
+      "type": "custom-content",
+      "disabled": true,
+      "blocks": {
+        "16517382422f9a1334-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/code_c2c18369-7241-45e2-a689-e214f4660661.jpg",
+            "link": "shopify:\/\/collections\/back-to-school-sale",
+            "width": "100%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "16517382422f9a1334-1"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "gap": 0,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": ""
+      }
+    },
+    "1651220226ff9a0f06": {
+      "type": "slider",
+      "disabled": true,
+      "blocks": {
+        "165122022624aa9740-0": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/collection-pc_4516779e-345b-4b71-9886-bd54179c3090.jpg",
+            "mb_background": "shopify:\/\/shop_images\/collection-mo.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "shopify:\/\/collections\/blowout-sale",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165122022624aa9740-0"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": "collectionBanner"
+      }
+    },
+    "collection-header": {
+      "type": "collection-page-header",
+      "disabled": true,
+      "blocks": {
+        "ec457e0f-c034-4019-b0bc-729f8a966436": {
+          "type": "banner",
+          "settings": {
+            "collection": "back-to-school-sale",
+            "image": "shopify:\/\/shop_images\/code_c2c18369-7241-45e2-a689-e214f4660661.jpg"
+          }
+        },
+        "2c693f46-f55f-4a3b-bfc0-ef88f3060714": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "ec457e0f-c034-4019-b0bc-729f8a966436",
+        "2c693f46-f55f-4a3b-bfc0-ef88f3060714"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "layout": "without_breadcrumb",
+        "header_height": "medium",
+        "text_alignment": "center",
+        "vertical_alignment": "end",
+        "text_color": "white",
+        "bg_color": "#ffffff",
+        "enable_parallax": false,
+        "upper_title": false,
+        "show_desc": false,
+        "collection_all_desc": "<p>3213213<\/p>"
+      }
+    },
+    "main": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "26ef6509-772d-4c44-bd90-efc089bd9355": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "button",
+            "title": "Size",
+            "filtergroup": "XS,S,M,L,XL",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "e12de6da-eab8-4abe-967c-06d0d959a18a": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "color",
+            "title": "Colors",
+            "filtergroup": "Blue, Red, White ,Black ,Pink ,Silver,Purple,Brown,Yellow,Grey,Green,Tan,Violet,Dark Grey,Beige,Light Blue, Dark Blue, Light Grey, Light Pink, Mint, Rose Gold, Night Blue, Copper, Coral, Rosy Brown",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": false
+          }
+        },
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "default",
+            "title": "Prices",
+            "filtergroup": "$0-$50,$50-$100,$100-$150,$150-$200,$200-$300,$300-$400",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "7010d009-1452-4352-abb9-37d295eaeb5d": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "button",
+            "title": "Products",
+            "filtergroup": "Most Popular, New Arrivals, Price High to Low, Price Low to High",
+            "show_label": false,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        },
+        "4903963a-90f0-4fe1-be23-ee4f8749e483": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Brands",
+            "filtergroup": "Minimog,Retrolie,Abby,Brook,Learts,Vagabond",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "00b3badd-1613-4230-85d8-f87f04306aaa": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Tags",
+            "filtergroup": "Dress,Tops,Shirts,Fashion,Hats,Sandal,Belt,Bags,Snacker,Denim,Minimog,Vagabond,Sunglasses, Beachwear,Vintage",
+            "show_label": false,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        }
+      },
+      "block_order": [
+        "26ef6509-772d-4c44-bd90-efc089bd9355",
+        "e12de6da-eab8-4abe-967c-06d0d959a18a",
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15",
+        "7010d009-1452-4352-abb9-37d295eaeb5d",
+        "4903963a-90f0-4fe1-be23-ee4f8749e483",
+        "00b3badd-1613-4230-85d8-f87f04306aaa"
+      ],
+      "settings": {
+        "container": "w-full",
+        "grid_layout": "grid",
+        "grid_columns": "4",
+        "show_columns_switcher": false,
+        "pagination_limit": 24,
+        "paginate_type": "infinite",
+        "show_sorting": true,
+        "show_filter": false,
+        "filters_type": "storefront_filters",
+        "sidebar": "fixed",
+        "sidebar_title": "Filters",
+        "limit_height_widget": true,
+        "limit_height": 200,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": false,
+        "collapsed_groups": "Brand, Vendor, Size",
+        "color_swatches": "color,colour,couleur,farbe"
+      }
+    },
+    "recent-viewed": {
+      "type": "recent-viewed-products",
+      "disabled": true,
+      "settings": {
+        "container": "w-full",
+        "heading": "Recently Viewed",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 0,
+        "enable_slider": true
+      }
+    },
+    "16462965411055ff2d": {
+      "type": "instagram",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "subheading": "@Thesupermade",
+        "description": "<p>\n\t<u><a href=\"https:\/\/www.thesupermade.com\/pages\/instagram-trending\"><span style=\"font-size:9px;\">VIEW MORE<span style=\"font-size:9px;\"><span style=\"font-size:9px;\"><\/span><\/span><\/span><\/a><\/u><u><\/u><u><\/u> \n<\/p>",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "rgba(0,0,0,0)",
+        "layout": "grid",
+        "images_count": 4,
+        "grid_columns": 4,
+        "gap": 10,
+        "mobile_gap": 2,
+        "profile": "https:\/\/www.instagram.com\/thesupermade",
+        "button_label": "",
+        "custom_class": ""
+      }
+    },
+    "165871978875a7940f": {
+      "type": "custom-content",
+      "blocks": {
+        "c11bb081-715a-4f9d-925b-9ad1d284da51": {
+          "type": "html",
+          "settings": {
+            "code": "<script>\n    var ua = navigator.userAgent;\n    var ipad = ua.match(\/(iPad).*OS\\s([\\d_]+)\/),\n    isIphone = !ipad && ua.match(\/(iPhone\\sOS)\\s([\\d_]+)\/),\n    isAndroid = ua.match(\/(Android)\\s+([\\d.]+)\/),\n    isMobile = isIphone || isAndroid;\n  \n  window.Cloud = {\n  language: 'en',\n  device: isMobile ? 'M':'pc',\n  COUNTRY_CODE: $('.currency-option').val(),    \n  sitename:'48806'\n  }\n  <\/script>\n  <script src=\"\/\/cdn.shopify.com\/s\/files\/1\/0610\/7208\/1122\/t\/24\/assets\/op-analytics.js?v=118671256134864980591657855836753\"><\/script>      \n  <script type=\"text\/javascript\">\n  (function(){\n\/\/   let timer = setInterval(()=>{\n\/\/     $('.sf__product-listing .sf__col-item').find('a').each(function(){\n\/\/         let $a = $(this);\n\/\/         $a.attr({'target':'_blank'});\n\/\/         clearInterval(timer);\n\/\/     })\n    \n\/\/   },500)\n  \n  })()  \n  var OPDataReport = function(opts) {\n  this.initializeVariables()\n  typeof jQuery !== 'undefined' && typeof OPAnalytics !== 'undefined' && this.init()\n  }\n  \n  OPDataReport.vars = {}\n  \n  OPDataReport.prototype = {\n  constructor: OPDataReport,\n  initializeVariables: function() {\n      var vals = OPDataReport.vars\n      for (var name in vals) {\n          if (vals.hasOwnProperty(name)) {\n              this[name] = vals[name]\n          }\n      }\n  },      \n  listDataReport: function() {\n    var menu = $('.sf-nav .sf-menu-item a').text(),  info = document.title;\n    OPAnalytics.track({\n        name: 'supermade:list_' + info + '_exposure',\n        url: window.location.href,\n        sitename: Cloud ? Cloud.siteId : window.location.hostname,\n        page: 'list',\n        menu: menu,\n        bindedEl: 'window',\n        targetEl: '.sf__product-listing .sf__col-item',\n        action: 'EXPOSE',\n        desc: '',\n        hostname: ''\n    })\n    OPAnalytics.track({\n        name: 'supermade:list_' + info + '_exposure',\n        url: window.location.href,\n        sitename: Cloud ? Cloud.siteId : window.location.hostname,\n        page: 'list',\n        menu: menu,\n        bindedEl: 'window',\n        targetEl: '.sf__product-listing .sf__col-item',\n        action: 'CLICK',\n        desc: '',\n        hostname: ''\n    })\n    \n  },     \n  init: function() {\n      var self = this;\n      $(document).ready(function() {\n        self.listDataReport();\n        window.currentPage = 'list'   \n        \n      })\n  }\n  }\n  new OPDataReport();\n  \n  (function() {\n  if(typeof Utils !== 'undefined') {\n      var utmArr = [\"utm_source\", \"utm_medium\", \"utm_campaign\", \"utm_term\", \"utm_adset\", \"utm_content\", \"browser_mode\"];\n      var i, utils;\n      var queryObj = Utils.getGet()\n      for (i=0; i< utmArr.length; i++) {\n          var item = utmArr[i]\n          if(typeof Utils === 'function') {\n              utils = new Utils();\n          } else {\n              utils = Utils;\n          }\n          if(queryObj[item]) {\n              utils.setCookie(item, queryObj[item], 86400 * 7)\n          }\n      }\n  }\n  })();\n  <\/script>",
+            "width": "50%",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "c11bb081-715a-4f9d-925b-9ad1d284da51"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "埋点代码，统计用，别删",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "enable_slider": false,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "custom_class": "hide"
+      }
+    },
+    "16609062693ce1095f": {
+      "type": "banner-with-slider",
+      "disabled": true,
+      "blocks": {
+        "1660906269e0afcb0e-0": {
+          "type": "item_slide",
+          "settings": {
+            "content_text_color": "black",
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "subheading": "Hot this week",
+            "heading": "Chenille sweater with<br> raglan sleeves",
+            "description": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "1660906269e0afcb0e-1": {
+          "type": "item_slide",
+          "disabled": true,
+          "settings": {
+            "content_text_color": "black",
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "subheading": "Hot this week",
+            "heading": "Chenille sweater with<br> raglan sleeves",
+            "description": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "1660906269e0afcb0e-2": {
+          "type": "item_slide",
+          "disabled": true,
+          "settings": {
+            "content_text_color": "black",
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "subheading": "Hot this week",
+            "heading": "Chenille sweater with<br> raglan sleeves",
+            "description": "",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660906269e0afcb0e-0",
+        "1660906269e0afcb0e-1",
+        "1660906269e0afcb0e-2"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "slide_autoplay": false,
+        "autorotate_speed": 5,
+        "button_text_1": "Shop Now",
+        "button_link_1": "",
+        "button_style_1": "sf__btn-white",
+        "button_size_1": "",
+        "button_text_2": "Shop Now",
+        "button_link_2": "",
+        "button_style_2": "sf__btn-white",
+        "button_size_2": "",
+        "button_text_3": "Shop Now",
+        "button_link_3": "",
+        "button_style_3": "sf__btn-white",
+        "button_size_3": "",
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "1651738243c6752c63",
+    "1651220226ff9a0f06",
+    "collection-header",
+    "main",
+    "recent-viewed",
+    "16462965411055ff2d",
+    "165871978875a7940f",
+    "16609062693ce1095f"
+  ]
+}

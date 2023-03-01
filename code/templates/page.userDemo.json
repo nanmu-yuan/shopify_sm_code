@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-no-title",
+      "settings": {
+      }
+    },
+    "e768917f-a858-4fff-963c-ee6a9a0ee5cb": {
+      "type": "react-module",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e768917f-a858-4fff-963c-ee6a9a0ee5cb"
+  ]
+}

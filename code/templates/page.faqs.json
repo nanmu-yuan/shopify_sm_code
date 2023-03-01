@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-faqs",
+      "blocks": {
+        "custom-content": {
+          "type": "content",
+          "settings": {
+            "content": "<h2>SHOPPING<\/h2>"
+          }
+        },
+        "accordion-1": {
+          "type": "accordion",
+          "settings": {
+            "title": "How Do I Know If My Order Went Through?",
+            "content": "<p>After an order is placed, we'll send an order confirmation to your email immediately. If any mistakes were made in ordering, please contact us as soon as possible to rectify the situation. If you haven't received an email, please check your SPAM filter in your email first and then contact us.<\/p>",
+            "open": false
+          }
+        },
+        "accordion-2": {
+          "type": "accordion",
+          "settings": {
+            "title": "How To Cancel My Order?",
+            "content": "<p>If your package has not yet been shipped for over 1 week after your order is placed, please <a href=\"https:\/\/www.thesupermade.com\/pages\/contact-us\" title=\"contact us\">contact us<\/a> or click <a href=\"https:\/\/www.thesupermade.com\/pages\/cancel-order\" title=\"cancel order\">HERE<\/a> to cancel your order as soon as possible.<\/p>",
+            "open": false
+          }
+        },
+        "accordion-3": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sold Out? What If The Item I’m Interested In Is No Longer Available In My Size?",
+            "content": "<p>Due to our limited stocks of clothing, some items sell out quickly. We try our best to replenish based on your needs, so send us the item and size you're interested in, including the product link, and our team will do our best to get you the item you need.<\/p>",
+            "open": false
+          }
+        },
+        "accordion-4": {
+          "type": "accordion",
+          "settings": {
+            "title": "What Should Do If The Size Is Different From What I Ordered?",
+            "content": "<p>Please note that the measurement shown on the size chart is around 1-2 cm tolerance. Every product has its size chart on the page, and we use the measurement of cm to measure the product. If they don't fit you well, you could return the items. (Please check our <a href=\"https:\/\/www.thesupermade.com\/pages\/return-exchange\" title=\"return policy\">return policy<\/a>)<\/p>",
+            "open": false
+          }
+        },
+        "0010bdf8-817a-4fd8-8c2e-b5288ed9ac0c": {
+          "type": "accordion",
+          "settings": {
+            "title": "Why is The Color Of the Received Product Is A Little Different From What I Saw Online?",
+            "content": "<p>Our products are photographed by the camera, without adding any filters to the picture. Product color difference depends on your phone or computer screen, but if you are unhappy with your order we will be happy to do a return or exchange.<\/p>",
+            "open": false
+          }
+        },
+        "1cb24d3c-2cb1-43e8-a7a9-6ec8c6095f5e": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do You Have Your Own Physical Store?",
+            "content": "<p>We do not operate in any physical locations at this point. Stay tuned as our brand grows.<\/p>",
+            "open": false
+          }
+        },
+        "a31a9ac6-b00f-492b-9079-e48290e0c4f8": {
+          "type": "accordion",
+          "settings": {
+            "title": "How Do I Use A Coupon Code?",
+            "content": "<p>Just enter the coupon code at the input box at the checkout page, the discount will auto-apply on your order, pls make sure of the coupon using dates. If it expires, your coupon code won't work. <\/p>",
+            "open": false
+          }
+        },
+        "1e2632ca-f827-4387-b40c-d9e3adcae0b9": {
+          "type": "accordion",
+          "settings": {
+            "title": "Not Be Sure About A Size Or Have A Fit Question. How Do I Find This Information?",
+            "content": "<p>Please see our Size Guide nearing the size options on the product page. If you still have specific questions about a fit of an item or measurement guidelines, please email us for more help.<\/p>",
+            "open": false
+          }
+        },
+        "2c84569b-825b-4d98-bf89-5e41a3d277e0": {
+          "type": "accordion",
+          "settings": {
+            "title": "Why Was My Order Canceled?",
+            "content": "<p>Due to unforeseen circumstances, items listed on the website are in rare cases out of stock in our factories. If this does happen, we will contact you within 24-48 hours to explain the cancellation. If other items in your order are in stock, those items will still be shipped to you and the unavailable item will be removed from your order and a refund will be processed.<\/p>",
+            "open": false
+          }
+        },
+        "accordion-5": {
+          "type": "accordion",
+          "settings": {
+            "title": "Need To Change Something On My Order, How Can I Do That?",
+            "content": "<p>Please contact us immediately if you need to change or cancel your order. We process and ship orders quickly (one business day to ship items that are in stock). Once the parcel has been processed and sent to the post office, we will be unable to make any changes.<\/p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "custom-content",
+        "accordion-1",
+        "accordion-2",
+        "accordion-3",
+        "accordion-4",
+        "0010bdf8-817a-4fd8-8c2e-b5288ed9ac0c",
+        "1cb24d3c-2cb1-43e8-a7a9-6ec8c6095f5e",
+        "a31a9ac6-b00f-492b-9079-e48290e0c4f8",
+        "1e2632ca-f827-4387-b40c-d9e3adcae0b9",
+        "2c84569b-825b-4d98-bf89-5e41a3d277e0",
+        "accordion-5"
+      ],
+      "settings": {
+        "container": "container",
+        "menu": ""
+      }
+    },
+    "45fdb078-419a-4e70-b837-97e6527e7e13": {
+      "type": "page-faqs",
+      "blocks": {
+        "7048682f-ed29-4c99-9a5b-06cabaf3b6b0": {
+          "type": "content",
+          "settings": {
+            "content": "<p><br> <br> <br><\/p><h2>Shipping<\/h2>"
+          }
+        },
+        "template--16178814353634__45fdb078-419a-4e70-b837-97e6527e7e13-16661526146961e62f-0": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do You Ship Worldwide? What Are Your Shipping Destinations?",
+            "content": "<p>We offer worldwide shipping, and you can check this page to see more <a href=\"https:\/\/www.thesupermade.com\/pages\/shipping\" title=\"shipping info\">shipping info<\/a>.<\/p>",
+            "open": false
+          }
+        },
+        "template--16178814353634__45fdb078-419a-4e70-b837-97e6527e7e13-16661526146961e62f-1": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can I Change My Address?",
+            "content": "<p>If your package has not yet been shipped, please <a href=\"https:\/\/www.thesupermade.com\/pages\/contact-us\" title=\"contact us\">contact us<\/a> or click <a href=\"https:\/\/www.thesupermade.com\/pages\/edit-shipping-address\" title=\"edit shipping address\">HERE <\/a>to edit your correct shipping address as soon as possible. <\/p>",
+            "open": false
+          }
+        },
+        "template--16178814353634__45fdb078-419a-4e70-b837-97e6527e7e13-16661526146961e62f-2": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do You Refund The Shipping Fees?",
+            "content": "<p>Unfortunately shipping fees will not be refunded if you decide to return your items. For more information on returns, please check <a href=\"https:\/\/www.thesupermade.com\/pages\/return-exchange\" title=\"return-exchange\"><strong>this page<\/strong><\/a><strong>.<\/strong><\/p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "7048682f-ed29-4c99-9a5b-06cabaf3b6b0",
+        "template--16178814353634__45fdb078-419a-4e70-b837-97e6527e7e13-16661526146961e62f-0",
+        "template--16178814353634__45fdb078-419a-4e70-b837-97e6527e7e13-16661526146961e62f-1",
+        "template--16178814353634__45fdb078-419a-4e70-b837-97e6527e7e13-16661526146961e62f-2"
+      ],
+      "settings": {
+        "container": "container",
+        "menu": ""
+      }
+    },
+    "3a307aea-b29a-4890-a638-c70e5d37b999": {
+      "type": "page-faqs",
+      "blocks": {
+        "48a4dda2-ce2d-4fcf-9987-974487ce4847": {
+          "type": "content",
+          "settings": {
+            "content": "<p><br> <br> <br><\/p><h2>Payment<\/h2>"
+          }
+        },
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-0": {
+          "type": "accordion",
+          "settings": {
+            "title": "How Do I Pay For My Order?",
+            "content": "<p>We accept PayPal, Visa and MasterCard credit and debit cards via our secure payment method.<\/p><p>All credit and debit cardholders are subject to validation and authorization by both us and the card issuer, to maintain security and prevent fraud.<\/p>",
+            "open": false
+          }
+        },
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-1": {
+          "type": "accordion",
+          "settings": {
+            "title": "What Currencies Can I Use?",
+            "content": "<p>We accept US dollars, Euros, Great British Pound Sterling，Canadian Dollars, Australian Dollar, Norwegian Krone, Switzerland Francs, Swedish Krona, Polish Zloty, Danish Krona, Japanese Yen, Hong Kong Dollar and others.<\/p>",
+            "open": false
+          }
+        },
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-2": {
+          "type": "accordion",
+          "settings": {
+            "title": "Is It Safe To Use My Credit Card On The Website?",
+            "content": "<p>Yes, we take your security seriously. We use industry-standard encryption technologies when transferring and receiving customer data exchanged with our site server. None of your credit card details will be revealed.<\/p><p>During checkout, when you enter your credit card & personal information at our online store, you are passing the information securely to us, using secure socket layer technology (SSL). <\/p>",
+            "open": false
+          }
+        },
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-3": {
+          "type": "accordion",
+          "settings": {
+            "title": "Why My Credit Card Was Refused?",
+            "content": "<p>Your credit card may be refused for any of the following reasons:<\/p><p>The card may have expired. Pls confirm that your card is still valid. You may have reached your credit limit. Contact your bank to check that you have not exceeded the authorized purchase limit.<\/p><p>You may have entered some information incorrectly. Check that you have filled in all the required fields correctly.<\/p><p>Make sure you’re using the latest version of your web browser. Maybe because your browser is installed with some kind of plug-in. Please clear the cookies restart the browser and then try again.<\/p><p>If you have any other issues, we recommend getting in touch with your card issuer.<\/p>",
+            "open": false
+          }
+        },
+        "084d9975-fde6-47a5-8df6-ce7c71584f43": {
+          "type": "accordion",
+          "settings": {
+            "title": "Was I Charged Twice?",
+            "content": "<p>Your credit card will only be charged once after your order ships.<\/p><p>If you just placed your order, what you are seeing on your bank account is an authorization. This is a common bank practice handling credit card transactions to ensure sufficient funds and account authenticity. This authorization will clear (depending on your bank, usually within 48 – 72 hours.) If you need help speeding up the process, you can contact the issuing bank of your credit card.<\/p>",
+            "open": false
+          }
+        },
+        "2d67a9c7-0d22-4045-a1a4-dfddee0030b8": {
+          "type": "accordion",
+          "settings": {
+            "title": "Other Questions",
+            "content": "<p>Still can not find your questions? Do not worry, contact us now via email: <a href=\"mailto:service@thesupermade.com\" title=\"mailto:service@thesupermade.com\">service@thesupermade.com<\/a> or the <a href=\"https:\/\/www.thesupermade.com\/pages\/contact-us\" title=\"https:\/\/www.thesupermade.com\/pages\/contact-us\">page here<\/a>.<\/p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "48a4dda2-ce2d-4fcf-9987-974487ce4847",
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-0",
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-1",
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-2",
+        "template--16178814353634__3a307aea-b29a-4890-a638-c70e5d37b999-16661526146961e62f-3",
+        "084d9975-fde6-47a5-8df6-ce7c71584f43",
+        "2d67a9c7-0d22-4045-a1a4-dfddee0030b8"
+      ],
+      "settings": {
+        "container": "container",
+        "menu": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "45fdb078-419a-4e70-b837-97e6527e7e13",
+    "3a307aea-b29a-4890-a638-c70e5d37b999"
+  ]
+}

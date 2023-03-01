@@ -1,0 +1,554 @@
+{% assign theme = section.settings.theme %}
+{% assign Button_text = section.settings.Button_text %}
+<div class="wall-detail-warp {{ section.id }}">
+    <div class="wall-layout">
+        <div class="w-l-warp">
+            <div class="wall-box swiper-container">
+                <div class="swiper-wrapper" style="padding-left: 0;">
+                   {% for block in section.blocks %}
+                      {% if block.type == 'BigImage' %}
+                         <div class="swiper-slide">
+                          <div class="fr-ec-image">
+                         {% assign image = block.settings.image %}
+                          {% render 'responsive-image', image: image, wrapper_class: 'fr-ec-image__img' %}
+                           </div>
+                          </div>
+                        {% endif %}
+                {% endfor %}
+                </div>
+                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" aria-disabled="false"
+                    style="top: 317.312px;"> <svg width="24" height="24" viewbox="0 0 24 24" focusable="false"
+                        class="fr-ec-icon fr-ec-icon--default" role="presentation">
+                        <g fill-rule="evenodd">
+                            <polygon
+                                transform="translate(12.000500, 12.500000) scale(-1, 1) rotate(-90.000000) translate(-12.000500, -12.500000)"
+                                points="17.664 9 12 13.541 6.336 9 5 10.387 12 16 19.001 10.387"></polygon>
+                        </g>
+                    </svg> </button> <button class="slick-next slick-arrow" style="top: 317.312px;" aria-label="Next"
+                    type="button" aria-disabled="false"> <svg width="24" height="24" viewbox="0 0 24 24"
+                        focusable="false" class="fr-ec-icon fr-ec-icon--default" role="presentation">
+                        <g fill-rule="evenodd">
+                            <polygon
+                                transform="translate(12.000500, 12.500000) rotate(-90.000000) translate(-12.000500, -12.500000)"
+                                points="17.664 9 12 13.541 6.336 9 5 10.387 12 16 19.001 10.387"></polygon>
+                        </g>
+                    </svg> </button>
+            </div>
+        </div>
+        <div class="w-r-warp">
+            <div class="fr-ec-gutter-container">
+                <h4>{{ theme }}</h4>
+                <div>
+                    <div class="fr-ec-tab-group__content">
+                        <div class="fr-ec-content-alignment">
+                            <ul class="fr-ec-collection-list">
+                              {% for block in section.blocks %}
+                                {% if block.type == 'List' %}
+                                  {% assign image = block.settings.image %}
+                                   {% assign link = block.settings.link %}
+                                   {% assign title = block.settings.title %}
+                                   {% assign name = block.settings.name %}
+                                  
+                                  <li class="fr-ec-collection-list__item"><a class="fr-link-to"
+                                        href="{{ link }}">
+                                        <div class="fr-ec-media-object">
+                                            <div class="fr-ec-media-object__media">
+                                                <div class="fr-ec-image-enhancements">
+                                                    <div class="fr-ec-image1">
+                                                        {% render 'responsive-image', image: image, wrapper_class: 'fr-ec-image__img1' %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fr-ec-media-object__content">
+                                                <div class="fr-ec-actionable-content">
+                                                    <div class="fr-ec-actionable-content__content--default">
+                                                        <div class="fr-ec-flag-text">{{ title }}</div>
+                                                        <h2 class="fr-ec-title">{{ name }}</h2>
+                                                        <div class="fr-ec-price">
+                                                            <div class="fr-ec-content-alignment"><strong
+                                                                    class="fr-ec-price-text">$58.42</strong></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fr-ec-actionable-content__actions--default">
+                                                        <div class="fr-ec-link-text"><span class="fr-ec-body ">More
+                                                                Details</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                  {% endif %}
+                              {% endfor %}
+               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-ec-button-box"><a href="https://www.thesupermade.com/pages/on-the-grid"
+                        class="fr-ec-button">{{ Button_text }}</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Wall-detail-content",
+    "settings": [
+           {
+                   "type": "text",
+                    "id": "theme",
+                    "label": {
+                     "en": "Product theme"
+                       },
+                     "default": "medium"
+                  },
+       {
+                   "type": "text",
+                    "id": "Button_text",
+                    "label": {
+                     "en": "Button text"
+                       },
+                     "default": "Black"
+                  }
+    ],
+    "presets": [
+        {
+            "name": "Wall-detail-content"
+        }
+    ],
+         
+      "blocks": [
+          {
+              "type": "BigImage",
+              "name": "BigImage",
+              "settings": [
+                    {
+                     "type": "image_picker",
+                      "id": "image",
+                      "label": {
+                      "en": "Image"
+                         }
+                     }
+              ]
+          },
+             {
+              "type": "List",
+              "name": "List",
+              "settings": [
+                    {
+                     "type": "image_picker",
+                      "id": "image",
+                      "label": {
+                      "en": "Product Image"
+                         }
+                     },
+                  {
+                   "type": "text",
+                    "id": "title",
+                    "label": {
+                     "en": "Product title"
+                       },
+                     "default": "medium"
+                  },
+                 {
+                   "type": "text",
+                    "id": "name",
+                    "label": {
+                     "en": "Product name"
+                       },
+                    "default": "medium"
+                  },
+                 {
+                    "type": "url",
+                    "id": "link",
+                     "label": {
+                      "en": "Product Link"
+          }
+        }
+              ]
+          }
+      ]
+  }
+{% endschema %}
+
+
+
+<style>
+    .page-header {
+        display: none
+    }
+
+    #MainContent .container {
+        padding: 0
+    }
+
+    .wall-detail-warp {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+
+    }
+
+    .wall-detail-warp section {
+        display: inline-block;
+    }
+
+    .wall-layout {
+        max-width: 1200px;
+        vertical-align: top;
+        width: calc(100vw - 3rem);
+        display: flex;
+    }
+
+    .w-l-warp {
+        width: 50%;
+        max-width: calc(500px - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        vertical-align: top;
+    }
+
+    .w-r-warp {
+        width: 100%;
+        max-width: calc(700px - 1.5rem);
+        padding-left: 1.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.55rem;
+        position: relative;
+        vertical-align: top;
+    }
+
+    .fr-ec-image {
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: 50%;
+        padding-top: 133.33%;
+        background: #f4f4f4;
+    }
+
+    .fr-ec-image__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        border: none;
+    }
+
+    .wall-layout .slick-arrow {
+        -webkit-appearance: none;
+        padding: 0.25rem;
+        background-color: #fff;
+        margin: 0;
+        pointer-events: auto;
+        border: none;
+        outline: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        opacity: .9;
+    }
+
+    .wall-layout .slick-arrow:hover {
+        background-color: #6a6a6a;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .swiper-button-disabled {
+        opacity: 0 !important;
+    }
+
+    .fr-ec-gutter-container {
+        margin-bottom: 5.5rem;
+    }
+
+    .fr-ec-gutter-container h2 {
+        margin: 0;
+    }
+
+    .fr-ec-gutter-container a {
+        text-decoration: none;
+    }
+
+    .fr-ec-gutter-container h4 {
+        margin-bottom: 1.4rem;
+        font-size: calc(1.1875rem + 1px);
+        line-height: 1.4;
+        font-weight: 300;
+    }
+
+    .fr-ec-tab-group__content {}
+
+    .fr-ec-collection-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        width: 100%;
+    }
+
+    .fr-ec-collection-list__item {
+        margin: 0;
+        border: none;
+        padding: 1rem 0;
+    }
+
+    .fr-ec-collection-list__item:not(:only-child) {
+        border-bottom: 1px solid #dadada;
+    }
+
+    .fr-ec-title {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .fr-ec-media-object {
+        display: flex;
+    }
+
+    .fr-ec-media-object__media {
+        height: auto;
+        width: 6.25rem;
+        margin-right: 1rem;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .fr-ec-image-enhancements {
+        position: relative;
+        margin-bottom: 0.75rem;
+    }
+
+    .fr-ec-image1 {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: 50%;
+        padding-top: 100%;
+
+    }
+
+    .fr-ec-image__img1 {
+        opacity: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    .fr-ec-media-object__content {
+        display: inline-block;
+        vertical-align: top;
+        flex: 1;
+    }
+
+    .r-ec-tile--default {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+    }
+
+    .fr-ec-actionable-content {
+        display: flex;
+        margin: -1rem 0 0 -1.5rem;
+    }
+
+    .fr-ec-actionable-content__content--default {
+        width: 52.35%;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        flex-grow: 999;
+    }
+
+    .fr-ec-flag-text {
+        font-size: .8125rem;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    .fr-ec-title {
+        line-height: 1.5;
+        font-size: .9375rem;
+        font-weight: 300;
+        margin-bottom: 0.75rem !important;
+
+    }
+
+    .fr-ec-flag-text {
+        font-size: .8125rem;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    .fr-ec-price {
+        display: inline-block;
+        position: relative;
+    }
+
+    .fr-ec-content-alignment {
+        margin: 0.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    .fr-ec-price-text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #e00;
+        letter-spacing: .025rem;
+    }
+
+    .fr-ec-link-text {
+        display: inline-block;
+        margin: 0;
+        outline: 0;
+        text-align: left;
+        cursor: pointer;
+        color: #000;
+        position: relative;
+        text-decoration: underline !important;
+    }
+
+    .fr-ec-body {
+        line-height: 1.5;
+        font-size: .9375rem;
+        font-weight: 300;
+    }
+
+    .fr-ec-actionable-content__actions--default {
+        width: 10.5rem;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        flex-grow: 1;
+    }
+
+    .fr-link-to {
+        display: block;
+    }
+
+    .fr-ec-button {
+        font-size: 1rem;
+        line-height: 1.2;
+        font-weight: 300;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 3.25rem;
+        width: calc(50% - 0.75rem);
+        max-width: none;
+        margin: 0;
+        border: none;
+        word-wrap: break-word;
+        outline: 0;
+        overflow: visible;
+        transition-property: background-color, color;
+        transition-duration: .18s;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        border: 1px solid #1b1b1b;
+        margin: 1.5rem 0 5.5rem 0;
+    }
+
+    @media (max-width:728px) {
+
+        .wall-detail-warp {
+            margin-top: 0;
+        }
+
+        .wall-layout {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .w-l-warp {
+            width: 100%;
+            margin: 0 0;
+        }
+
+        .w-r-warp {
+            padding-left: 0;
+            margin-left: 0;
+            margin-left: 0
+        }
+        .fr-ec-gutter-container h4{
+          margin-bottom:0;
+          margin-top:1.2rem
+        }
+        .fr-ec-actionable-content__content--default {
+            width: 90%;
+        }
+
+        .fr-ec-actionable-content {
+            flex-direction: column;
+        }
+
+        .fr-ec-media-object__content {
+            flex: auto;
+        }
+
+        .fr-ec-button {
+            width: 96%;
+
+            margin: 0 auto;
+            margin-top: 1.5rem;
+        }
+
+        .fr-ec-content-alignment {
+
+            margin-left: 0.5rem;
+            margin-right: 0.5rem
+        }
+
+        .fr-ec-button-box {
+            padding: 0 1.2rem;
+            display: flex;
+        }
+
+        .fr-ec-gutter-container h4 {
+            padding-left: 0.5rem
+        }
+
+    }  
+</style>
+
+
+
+
+  <script>
+   
+    $(function () {
+        var mySwiper = new Swiper('.wall-box', {
+            direction: 'horizontal',
+            speed: 500,
+            loop: false,
+            observer: true,
+            nextButton: '.slick-next',
+            prevButton: '.slick-prev',
+            allowTouchMove: true,
+            spaceBetween: 10,
+
+        });
+    })
+  
+</script>

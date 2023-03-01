@@ -1,0 +1,45 @@
+<div class="sf__collection-sortmb md:hidden">
+  <div class="sf__sortmb-wrapper touch-none">
+    <div class="relative sf__sortmb-list touch-none">
+      <span class="sf__hidden-sortmb p-3 absolute top-0 right-0">{% render 'icon', name: 'times', size: 'small' %}</span>
+      <span class="sf__sortmb-label text-2xl">{{ 'collections.sorting.title' | t }}</span>
+      <ul>
+        {%-comment -%}
+        {% for option in collection.sort_options %}
+          <li
+            class="cursor-pointer{% if option.value == collection.sort_by %} active{% endif %}"
+            data-value="{{ option.value }}"
+            data-index="{{ forloop.index0 }}"
+          >
+            <span>{{ option.name }}</span>
+          </li>
+        {% endfor %}
+        {%- endcomment -%}
+       
+        
+          <li class="cursor-pointer {% if collection.sort_by == "manual" %} active{% endif %}" data-value="manual" data-index="0">
+            <span>Featured</span>
+          </li>
+        
+          <li class="cursor-pointer {% if collection.sort_by == "best-selling" %} active{% endif %}" data-value="best-selling" data-index="1">
+            <span>Most Popular</span>
+          </li>                 
+        
+          <li class="cursor-pointer {% if collection.sort_by == "price-ascending" %} active{% endif %}" data-value="price-ascending" data-index="2">
+            <span>Price Low to High</span>
+          </li>
+        
+          <li class="cursor-pointer {% if collection.sort_by == "price-descending" %} active{% endif %}" data-value="price-descending" data-index="3">
+            <span>Price High to Low</span>
+          </li>
+
+        
+          <li class="cursor-pointer {% if collection.sort_by == "created-descending" %} active{% endif %}" data-value="created-descending" data-index="4">
+            <span>New Arrivals</span>
+          </li>
+        
+     
+      </ul>
+    </div>
+  </div>
+</div>

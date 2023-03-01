@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "article",
+      "settings": {
+        "container": "container",
+        "sidebar_show": true,
+        "sidebar_position": "right_column",
+        "design": "layout1",
+        "blog_show_breadcrumb": false,
+        "blog_show_author": false,
+        "blog_show_date": false,
+        "blog_show_tags": false,
+        "blog_show_social": false,
+        "blog_show_related": false,
+        "blog_show_comment": true,
+        "show_related_articles": false,
+        "article_align_content": "text-left",
+        "article_show_tags": false,
+        "article_show_date": false,
+        "article_show_excerpt": false,
+        "article_show_button": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

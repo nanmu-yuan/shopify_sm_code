@@ -1,0 +1,731 @@
+<style>
+      .px{
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:60vh;
+  width:100%;
+}
+.react-container{
+  width:120px;
+  height:120px;
+/*   background:red; */
+  position:relative;
+
+}
+
+.react-container div{
+  height:40%;
+  width:40%;
+  border-radius:50%;
+  position:absolute;
+  animation:loading 2s ease infinite ;
+}
+
+.react-container :first-child{
+  background:#C299FC;
+}
+.react-container :nth-child(2){
+  background:#FFD739;
+  animation-delay:-0.5s;
+}
+.react-container :nth-child(3){
+  background:#9852F9;
+  animation-delay:-1s;
+}
+.react-container :last-child{
+  background:#6807F9;
+  animation-delay:-1.5s;
+}
+
+
+@keyframes loading {
+  0%,100%{
+    transform:translate(0,0)
+  }
+  25%{
+    transform:translate(150%,0)
+  }
+  50%{
+    transform:translate(150%,150%)
+  }
+  75%{
+    transform:translate(0,150%)
+  }
+}
+
+    </style>
+<div id = "react-app">
+ <div class="px">
+          <div class="react-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+</div>
+
+{% schema %}
+  {
+    "name": "React",
+    "presets": [{
+        "name": "React",
+        "category": "Image"
+    }]
+  }
+{% endschema %}
+
+<style>
+.template-page #MainContent{
+    padding-bottom:0 !important;
+}
+#root-app {
+  width: 100%;
+  background: linear-gradient(0deg, #002E5D 0%, #0E55A2 100%); }
+  #root-app .page-content-common, #root-app .top-bg .content-warp .xxxx .page-content-top, #root-app .page-content-middle .middle-content .xxxx .page-content-md, #root-app .page-content-bottom {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto; }
+  #root-app .common-mg, #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .title-img .img-bank .nnn, #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box, #root-app .page-content-bottom .bottom {
+    margin: 0 1.2vw; }
+  #root-app .top-bg {
+    position: relative;
+    width: 100%; }
+    #root-app .top-bg .bg-img {
+      width: 100%;
+      position: absolute; }
+      #root-app .top-bg .bg-img .isPc {
+        display: block; }
+      #root-app .top-bg .bg-img .isMobile {
+        display: none; }
+      @media (max-width: 768px) {
+        #root-app .top-bg .bg-img .isPc {
+          display: none; }
+        #root-app .top-bg .bg-img .isMobile {
+          display: block; } }
+    #root-app .top-bg .content-warp {
+      position: relative;
+      width: 100%;
+      top: 0;
+      padding-top: 65.9%; }
+      #root-app .top-bg .content-warp .xxxx {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0; }
+        #root-app .top-bg .content-warp .xxxx .page-content-top {
+          position: relative; }
+          #root-app .top-bg .content-warp .xxxx .page-content-top .top-title {
+            padding: 1.8vw 0 0 0;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            font-size: 2vw;
+            font-family: Jost;
+            font-weight: bold;
+            color: #6DFCFF;
+            text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.35); }
+          #root-app .top-bg .content-warp .xxxx .page-content-top .top-title_big {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            font-size: 4vw;
+            font-family: Jost;
+            font-weight: bold;
+            color: #6DFCFF;
+            text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.35); }
+          #root-app .top-bg .content-warp .xxxx .page-content-top .top-title_b {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            font-size: 2vw;
+            font-family: Jost;
+            font-weight: 500;
+            color: #FFFF3F;
+            padding-bottom: 0.8vw; }
+          @media (max-width: 768px) {
+            #root-app .top-bg .content-warp .xxxx .page-content-top .top-title {
+              font-size: 1.4rem;
+              text-align: center;
+              padding: 1rem 3.5rem 0 3.5rem; }
+            #root-app .top-bg .content-warp .xxxx .page-content-top .top-title_big {
+              font-size: 2.2rem; }
+            #root-app .top-bg .content-warp .xxxx .page-content-top .top-title_b {
+              font-size: 1.2rem;
+              padding-bottom: 0.2rem; } }
+          #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box {
+            position: relative; }
+            #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .title-img {
+              position: relative; }
+              #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .title-img img {
+                position: relative;
+                z-index: 1; }
+              #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .title-img .img-bank {
+                width: 100%;
+                height: 50%;
+                position: absolute;
+                bottom: 0;
+                z-index: 0; }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .title-img .img-bank .nnn {
+                  height: 100%;
+                  background-color: #002E5D; }
+            #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box {
+              background: #002E5D;
+              padding: 1.2vw 0 1.2vw 0; }
+              #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .email-info-box {
+                text-align: center;
+                padding-top: 0.5vw;
+                font-size: 1.2vw;
+                color: #f3d470;
+                font-weight: bold; }
+              #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .form-input-box {
+                height: 3.5vw;
+                padding: 0 15vw;
+                display: flex;
+                justify-content: center;
+                justify-items: center; }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .form-input-box .submit {
+                  color: #fff;
+                  width: 15vw;
+                  height: 100%;
+                  text-align: center;
+                  font-size: 1vw;
+                  font-weight: bold;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                  border: none;
+                  background: linear-gradient(90deg, #0069FF 0%, #C7D1EA 100%); }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .form-input-box .isSignStyle {
+                  background: #909399; }
+              @media (max-width: 768px) {
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .email-info-box {
+                  font-size: 0.6rem; }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .form-input-box {
+                  height: 2.2rem;
+                  padding: 0 5rem; }
+                  #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .form-input-box .submit {
+                    font-size: 0.6rem;
+                    width: 9rem; } }
+              #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp {
+                padding: 0 8%; }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .sign-days {
+                  text-align: center;
+                  padding-top: 1.2vw;
+                  color: #fff;
+                  font-size: 1.2vw; }
+                  #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .sign-days .singNum {
+                    color: #aef73a;
+                    font-size: 1.3;
+                    font-weight: bold; }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box {
+                  display: flex;
+                  margin-top: 1.2vw;
+                  justify-content: center; }
+                  #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box .day-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; }
+                    #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box .day-box .day-text {
+                      padding: 1.2vw 1.6vw;
+                      display: flex;
+                      background: linear-gradient(0deg, #C7C8C8, #FDFDFD, #7D7E7E);
+                      border-radius: 10px;
+                      font-size: 1.2vw;
+                      font-family: Jost;
+                      font-weight: 400;
+                      color: #4D4D4D;
+                      justify-content: center;
+                      align-items: center;
+                      position: relative; }
+                    #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box .day-box:not(:last-child)::after {
+                      content: '';
+                      display: block;
+                      width: 20px;
+                      border-top: 3px solid #fff; }
+                    #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box .day-box .acitve {
+                      background: linear-gradient(0deg, #0069FF 0%, #C7D1EA 100%);
+                      color: #FFFEFE; }
+              @media (max-width: 768px) {
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp {
+                  padding: 0 2%; }
+                  #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box {
+                    padding: 0.2rem 0; }
+                    #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box .day-box .day-text {
+                      padding: 0.5rem 0.2rem;
+                      font-size: 0.2rem;
+                      border-radius: 0.2rem;
+                      word-break: normal; }
+                    #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box .day-list-warp .day-list-box .day-box:not(:last-child)::after {
+                      content: '';
+                      display: block;
+                      width: 0.3rem;
+                      border-top: 2px solid #fff; } }
+          #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .ticket-title {
+            display: flex;
+            justify-content: center;
+            font-size: 2.8vw;
+            font-family: Jost;
+            font-weight: bold;
+            color: #6DFCFF;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+            padding: 2.2vw 0; }
+          @media (max-width: 768px) {
+            #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .ticket-title {
+              padding: 1rem 0;
+              font-size: 1.5rem; } }
+          #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .list-warp {
+            margin: 0 1.2vw; }
+            #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .list-warp .ticket-list {
+              display: flex;
+              justify-content: space-between;
+              justify-items: center; }
+              #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .list-warp .ticket-list .ticket-item {
+                width: 32%; }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .list-warp .ticket-list .ticket-item .ticket-img-box {
+                  width: 100%; }
+                  #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .list-warp .ticket-list .ticket-item .ticket-img-box img {
+                    width: 100%; }
+                #root-app .top-bg .content-warp .xxxx .page-content-top .top-ticket .list-warp .ticket-list .ticket-item .ticket-info {
+                  font-size: 1.2vw;
+                  font-family: Jost;
+                  padding-top: 0.8vw;
+                  font-weight: 400;
+                  color: #FFFF3F;
+                  text-align: center; }
+    @media (max-width: 768px) {
+      #root-app .top-bg .content-warp {
+        padding-top: 125%;
+        bottom: 0; } }
+  #root-app .page-content-middle {
+    position: relative;
+    width: 100%; }
+    #root-app .page-content-middle .bg-img {
+      width: 100%;
+      position: absolute; }
+      #root-app .page-content-middle .bg-img .isPc {
+        display: block; }
+      #root-app .page-content-middle .bg-img .isMobile {
+        display: none; }
+      @media (max-width: 768px) {
+        #root-app .page-content-middle .bg-img .isPc {
+          display: none; }
+        #root-app .page-content-middle .bg-img .isMobile {
+          display: block; } }
+    #root-app .page-content-middle .middle-content {
+      position: relative;
+      width: 100%;
+      top: 0;
+      padding-top: 56%; }
+      #root-app .page-content-middle .middle-content .xxxx {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+        #root-app .page-content-middle .middle-content .xxxx .page-content-md {
+          position: relative; }
+          #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-top .md-top-title {
+            text-align: center;
+            padding-top: 2vw;
+            padding-bottom: 0.8vw;
+            font-size: 2.8vw;
+            font-family: Jost;
+            font-weight: bold;
+            color: #6DFCFF;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35); }
+          #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-top .md-top-p {
+            margin: 0 8%; }
+            #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-top .md-top-p p {
+              font-size: 1.2vw;
+              font-family: Jost;
+              font-weight: 400;
+              color: #FFFFFF;
+              margin: 0.8vw 0; }
+          #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-bottom .md-bottom-title {
+            text-align: center;
+            padding-bottom: 1.5vw;
+            font-size: 2.8vw;
+            font-family: Jost;
+            font-weight: bold;
+            color: #6DFCFF;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35); }
+          #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-bottom .md-bottom-p {
+            margin: 0 8%; }
+            #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-bottom .md-bottom-p .b-p-info {
+              font-size: 1.2vw;
+              font-family: Jost;
+              font-weight: 400;
+              color: #FFFFFF; }
+          @media (max-width: 768px) {
+            #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-top .md-top-title {
+              font-size: 1.5rem; }
+            #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-top .md-top-p {
+              margin: 0 0.8rem; }
+              #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-top .md-top-p p {
+                font-size: 0.6rem;
+                font-family: Jost;
+                font-weight: 400;
+                color: #FFFFFF;
+                line-height: 1rem; }
+            #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-bottom .md-bottom-title {
+              font-size: 1.5rem; }
+            #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-bottom .md-bottom-p {
+              margin: 0 0.8rem; }
+              #root-app .page-content-middle .middle-content .xxxx .page-content-md .md-bottom .md-bottom-p .b-p-info {
+                font-size: 0.6rem;
+                line-height: 1rem; } }
+          #root-app .page-content-middle .middle-content .xxxx .page-content-md hr {
+            margin: 2.8vw 0; }
+    @media (max-width: 768px) {
+      #root-app .page-content-middle .middle-content {
+        padding-top: 122%; } }
+  #root-app .box-img-md {
+    position: relative;
+    width: 100%; }
+    #root-app .box-img-md img {
+      position: absolute;
+      width: 100%;
+      top: -2vw; }
+  #root-app .page-content-bottom .bottom {
+    padding: 8vw 0 9vw 0; }
+    #root-app .page-content-bottom .bottom .b-img-warp {
+      margin: 0 5vw; }
+      #root-app .page-content-bottom .bottom .b-img-warp .b-img-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center; }
+    #root-app .page-content-bottom .bottom .bottom-info {
+      padding-top: 3.5vw;
+      font-size: 1.2vw;
+      font-family: Jost;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 2.2vw; }
+    #root-app .page-content-bottom .bottom .bottom-t {
+      padding-top: 2.5vw;
+      font-size: 0.8vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      font-family: Jost;
+      font-weight: 400; }
+      #root-app .page-content-bottom .bottom .bottom-t .icon-list {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #root-app .page-content-bottom .bottom .bottom-t .icon-list .icon-item {
+          padding-right: 12px;
+          padding-right: 0.3vw;
+          width: 1.2vw;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+      #root-app .page-content-bottom .bottom .bottom-t a {
+        color: #fff;
+        letter-spacing: 0.1rem;
+        text-decoration: underline; }
+  @media (max-width: 768px) {
+    #root-app .page-content-bottom .bottom {
+      padding: 4rem 0 4rem 0; }
+      #root-app .page-content-bottom .bottom .bottom-info {
+        font-size: 0.6rem;
+        line-height: 1.2rem; }
+      #root-app .page-content-bottom .bottom .bottom-t {
+        padding-top: 1.2rem;
+        font-size: 0.4rem; }
+        #root-app .page-content-bottom .bottom .bottom-t .icon-list .icon-item {
+          padding-right: 0.2rem;
+          width: 1rem; }
+        #root-app .page-content-bottom .bottom .bottom-t a {
+          color: #FFF;
+          letter-spacing: normal;
+          text-decoration: underline; } }
+  @media (max-width: 728px) {
+    #root-app .page-content-common, #root-app .top-bg .content-warp .xxxx .page-content-top, #root-app .page-content-middle .middle-content .xxxx .page-content-md, #root-app .page-content-bottom {
+      width: 95%; }
+    #root-app .common-mg, #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .title-img .img-bank .nnn, #root-app .top-bg .content-warp .xxxx .page-content-top .top-form-box .form-box, #root-app .page-content-bottom .bottom {
+      margin: 0 6px; } }
+
+
+
+</style>
+
+<script>
+"use strict";
+
+const useEffect = React.useEffect;
+const useState = React.useState;
+const createRef = React.createRef;
+const fetchFunSingadd = data => {
+  const singadd = window.fetch('https://publicapi.allindesk.com/api/shopify/singadd', {
+    method: 'POST',
+    headers: {
+      "Content-type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+  return new Promise((solve, reject) => {
+    singadd.then(res => {
+      return solve(res.json());
+    });
+  });
+};
+const fetchFunSinglist = data => {
+  return new Promise((solve, reject) => {
+    window.fetch(`https://publicapi.allindesk.com/api/shopify/singlist/${data}`).then(res => {
+      return solve(res.json());
+    });
+  });
+};
+function App(props) {
+  const [days, setDay] = useState([]);
+  const [signStatus, setSignStatus] = useState({
+    type: '',
+    tip: 'SIGN IN'
+  });
+  const [signCount, setSignCount] = useState(0);
+  const emailName = props.data.useremail;
+  useEffect(() => {
+    if (!emailName) {
+      setDay(() => {
+        return modifyDays([]);
+      });
+    } else {
+      fetchFunSinglist(emailName).then(res => {
+        if (res.data.is_continue) {
+          setDay(() => {
+            return modifyDays(res.data.is_continue);
+          });
+          setSignCount(res.data.is_continue.length);
+        } else {
+          setDay(() => {
+            return modifyDays([]);
+          });
+          setSignCount(0);
+        }
+      });
+    }
+  }, []);
+  const submit = () => {
+    const email = {
+      email: emailName
+    };
+    if (!emailName) {
+      window.location.href = 'https://www.thesupermade.com/account/login?return_url=/pages/s2o-tickets';
+    } else {
+      fetchFunSingadd(email).then(res => {
+        if (res.data == 1) {
+          fetchFunSinglist(emailName).then(res => {
+            setDay(() => {
+              return modifyDays(res.data.is_continue);
+            });
+            setSignCount(res.data.is_continue.length);
+          });
+        } else {
+          setSignStatus(() => {
+            return {
+              type: 'isSignStyle',
+              tip: 'ALREADY SIGN IN'
+            };
+          });
+        }
+      });
+    }
+  };
+  const modifyDays = (orgData = []) => {
+    const newDays = [];
+    for (let i = 0; i < 7; i++) {
+      if (orgData[i] == i) {
+        newDays.push({
+          day: i + 1,
+          active: true
+        });
+      } else {
+        newDays.push({
+          day: i + 1,
+          active: false
+        });
+      }
+    }
+    return newDays;
+  };
+  return /*#__PURE__*/React.createElement("div", {
+    id: "root-app"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "top-bg"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bg-img"
+  }, /*#__PURE__*/React.createElement("img", {
+    className: "isMobile",
+    width: "100%",
+    src: "https://sources.aopcdn.com/edm/images/kokorou/20230220/1676858174938.jpg"
+  }), /*#__PURE__*/React.createElement("img", {
+    className: "isPc",
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230220/1676858269371.jpg"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "content-warp"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "xxxx"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "page-content-top"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "top-title"
+  }, "SIGN IN TO WIN"), /*#__PURE__*/React.createElement("div", {
+    className: "top-title_big"
+  }, "THE S2O TICKETS"), /*#__PURE__*/React.createElement("div", {
+    className: "top-title_b"
+  }, "[100% PRIZE!]"), /*#__PURE__*/React.createElement("div", {
+    className: "top-form-box"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "title-img"
+  }, /*#__PURE__*/React.createElement("img", {
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230217/1676619688258.png"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "img-bank"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "nnn"
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "form-box"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "form-input-box"
+  }, /*#__PURE__*/React.createElement("button", {
+    disabled: signStatus.type ? true : false,
+    className: `submit ${signStatus.type}`,
+    onClick: submit
+  }, signStatus.tip)), /*#__PURE__*/React.createElement("div", {
+    className: "email-info-box"
+  }, emailName), /*#__PURE__*/React.createElement("div", {
+    className: "day-list-warp"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "day-list-box"
+  }, days.map((item, key) => {
+    let active = item.active ? 'day-text acitve' : 'day-text';
+    return /*#__PURE__*/React.createElement("div", {
+      key: key,
+      className: "day-box"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: active
+    }, "DAY ", item.day));
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "sign-days"
+  }, "You have successfully signed in for ", /*#__PURE__*/React.createElement("span", {
+    className: "singNum"
+  }, signCount, " "), " days")))), /*#__PURE__*/React.createElement("div", {
+    className: "top-ticket"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ticket-title"
+  }, "ACTIVITY REWARDS"), /*#__PURE__*/React.createElement("div", {
+    className: "list-warp"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ticket-list"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ticket-item"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ticket-img-box"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230218/1676699323922.png"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "ticket-info"
+  }, "S2O Music Festival E-Ticket 1DAY PASS *5")), /*#__PURE__*/React.createElement("div", {
+    className: "ticket-item"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ticket-img-box"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230220/1676874922490.png"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "ticket-info"
+  }, "SuperMade Custom Necklace *1000")), /*#__PURE__*/React.createElement("div", {
+    className: "ticket-item"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "ticket-img-box"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230220/1676874941679.png"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "ticket-info"
+  }, "SuperMade Discount Coupon *5000"))))))))), /*#__PURE__*/React.createElement("div", {
+    className: "page-content-middle"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bg-img"
+  }, /*#__PURE__*/React.createElement("img", {
+    className: "isMobile",
+    width: "100%",
+    src: "https://sources.aopcdn.com/edm/images/bellalike-spain/20230220/1676877123226.png"
+  }), /*#__PURE__*/React.createElement("img", {
+    className: "isPc",
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/cicilookshop/20230220/1676876751725.png"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "middle-content"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "xxxx"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "page-content-md"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "md-top"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "md-top-title"
+  }, "ACTIVITY RULES"), /*#__PURE__*/React.createElement("div", {
+    className: "md-top-p"
+  }, /*#__PURE__*/React.createElement("p", null, "1. Activity time: 2023-02-24 00:00 - 2023-03-15 23:59."), /*#__PURE__*/React.createElement("p", null, "2. Login the mailbox is required to sign in. "), /*#__PURE__*/React.createElement("p", null, "3. You can participate in the lucky draw if you have signed in for 7 days, and the record of interrupted sign-in will be cleared and counted from the first day. "), /*#__PURE__*/React.createElement("p", null, "4. The overall winning rate of the activity is 100% ."), /*#__PURE__*/React.createElement("p", null, "5. The winner will be announced within one week after the prize is opened. The S2O Music Festival e-ticket and SuperMade discount coupon will be sent via email. the SuperMade custom necklace will be delivered via international logistics."))), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
+    className: "md-bottom"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "md-bottom-title"
+  }, "CAUTION"), /*#__PURE__*/React.createElement("div", {
+    className: "md-bottom-p"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "b-p-info"
+  }, "In the event of force majeure (including but not limited to major disasters, a ctivities directed by government agencies that need to stop or adjust, activities with extensive cheating, activities subject to serious network attacks or system failure resulting in a large number of errors on the winning list, activities can not be carried out normally), the merchant has the right to cancel, modify or suspend this activity."))))))), /*#__PURE__*/React.createElement("div", {
+    className: "box-img-md"
+  }, /*#__PURE__*/React.createElement("img", {
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230217/1676618444767.png"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "page-content-bottom"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bottom"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "b-img-warp"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "b-img-box"
+  }, /*#__PURE__*/React.createElement("img", {
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/fashionme/20230220/1676877698237.png"
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "bottom-info"
+  }, "IT\u2019S HOT, IT\u2019S WET, IT\u2019S WILD! DRESS FOR BATTLE AND GET SOAKED IN THWATER- SPLASHINGNG MADNESS OF THE ANNUAL S2O SONGKRAN MUSIC FESTIVAL. TAKING PLACE IN BANGKOK, TAIW,AN AND TOKYO, S2O IS THE WORLD\u2019S BIGGEST SONGKRAN CELEBRATION, FILLING THE SUMMER\u2019S HOTTEST NIGHTS WITH BLASTS OF COOL WATER, PULSATING BEATS FROM THE WORLD\u2019S TOP DJS AND ONE OF ASIA\u2019S MOST AWESOME AND BIGGEST PRODUCTIONS.", /*#__PURE__*/React.createElement("br", null), "ARE YOU READY FOR THE WORLD\u2019S WETTEST PARTY? BETTER BE BECAUSE YOUR BODY NEEDS LOTS OF WATER!"), /*#__PURE__*/React.createElement("div", {
+    className: "bottom-t"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "icon-list"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "icon-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230227/1677476180937.png"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "icon-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230227/1677476180937.png"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "icon-item"
+  }, /*#__PURE__*/React.createElement("img", {
+    width: "100%",
+    src: "http://sources.aopcdn.com/edm/images/kokorou/20230227/1677476180937.png"
+  }))), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.thesupermade.com/pages/rollingloud-tickets"
+  }, "ROLLINGLOUD TICKETS Winning")))));
+}
+ReactDOM.createRoot(document.getElementById("react-app")).render( /*#__PURE__*/React.createElement(App, {
+  data: window.a_pages
+}));
+</script>

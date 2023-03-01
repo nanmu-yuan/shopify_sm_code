@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "main": {
+      "type": "testpage",
+      "settings": {
+      }
+    },
+    "16570981677679e823": {
+      "type": "slider",
+      "disabled": true,
+      "blocks": {
+        "1657098167c2b8625b-2": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/thesupermade_22_8a2c47ba-2681-474f-aa8b-0b024cc94a4e.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "1657098167c2b8625b-0": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/thesupermade_24_07528a8d-9ea3-4425-81db-1064f8d137b0.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        },
+        "1657098167c2b8625b-1": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify:\/\/shop_images\/thesupermade_25_258aeb2b-b4dd-4560-b757-9eebe93ddd97.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657098167c2b8625b-2",
+        "1657098167c2b8625b-0",
+        "1657098167c2b8625b-1"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "slideshow_height": "small",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16570981677679e823"
+  ]
+}

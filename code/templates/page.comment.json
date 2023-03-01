@@ -1,0 +1,35 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-comment",
+      "blocks": {
+        "1d169ff0-cd15-4186-a9f0-50c80673fba0": {
+          "type": "comment",
+          "settings": {
+            "commentTitle": "Yessss",
+            "commentDescription": "Verryyyyy comfortable and i am very happy with the fit my favorite pair of shoes rn. It did take longer then i thought it would to ship and i got scared i got scammed but they arrived in about 3 weeks",
+            "commentStar": "5",
+            "commentName": "Olivia Niesen",
+            "commentDate": "08\/21\/2022"
+          }
+        }
+      },
+      "block_order": [
+        "1d169ff0-cd15-4186-a9f0-50c80673fba0"
+      ],
+      "settings": {
+      }
+    },
+    "1662003210ccf09934": {
+      "type": "custom-inter-wall",
+      "settings": {
+        "show_on_desktop": true,
+        "show_on_mobile": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1662003210ccf09934"
+  ]
+}

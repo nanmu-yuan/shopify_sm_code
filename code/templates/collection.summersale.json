@@ -1,0 +1,238 @@
+{
+  "sections": {
+    "1651738243c6752c63": {
+      "type": "custom-content",
+      "disabled": true,
+      "blocks": {
+        "16517382422f9a1334-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20220505-133242.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "16517382422f9a1334-1"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "",
+        "gap": 0,
+        "use_scroll_mobile": false,
+        "gap_mobile": 0,
+        "custom_class": ""
+      }
+    },
+    "1651220226ff9a0f06": {
+      "type": "slider",
+      "blocks": {
+        "165122022624aa9740-0": {
+          "type": "slider_item",
+          "disabled": true,
+          "settings": {
+            "background": "shopify:\/\/shop_images\/20220506-140143.jpg",
+            "mb_background": "shopify:\/\/shop_images\/20220505-133242.jpg",
+            "image_alignment": "center",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "",
+            "description": "",
+            "image_link": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165122022624aa9740-0"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": ""
+      }
+    },
+    "collection-header": {
+      "type": "collection-page-header",
+      "disabled": true,
+      "blocks": {
+        "ec457e0f-c034-4019-b0bc-729f8a966436": {
+          "type": "banner",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "ec457e0f-c034-4019-b0bc-729f8a966436"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "layout": "outside",
+        "header_height": "small",
+        "text_alignment": "left",
+        "vertical_alignment": "end",
+        "text_color": "dark",
+        "bg_color": "#ffffff",
+        "enable_parallax": false,
+        "upper_title": false,
+        "show_desc": false,
+        "collection_all_desc": "<p>3213213<\/p>"
+      }
+    },
+    "main": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "26ef6509-772d-4c44-bd90-efc089bd9355": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "button",
+            "title": "Size",
+            "filtergroup": "XS,S,M,L,XL",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "e12de6da-eab8-4abe-967c-06d0d959a18a": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "color",
+            "title": "Colors",
+            "filtergroup": "Blue, Red, White ,Black ,Pink ,Silver,Purple,Brown,Yellow,Grey,Green,Tan,Violet,Dark Grey,Beige,Light Blue, Dark Blue, Light Grey, Light Pink, Mint, Rose Gold, Night Blue, Copper, Coral, Rosy Brown",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": false
+          }
+        },
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "default",
+            "title": "Prices",
+            "filtergroup": "$0-$50,$50-$100,$100-$150,$150-$200,$200-$300,$300-$400",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "4903963a-90f0-4fe1-be23-ee4f8749e483": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Brands",
+            "filtergroup": "Minimog,Retrolie,Abby,Brook,Learts,Vagabond",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "00b3badd-1613-4230-85d8-f87f04306aaa": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Tags",
+            "filtergroup": "Dress,Tops,Shirts,Fashion,Hats,Sandal,Belt,Bags,Snacker,Denim,Minimog,Vagabond,Sunglasses, Beachwear,Vintage",
+            "show_label": false,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        }
+      },
+      "block_order": [
+        "26ef6509-772d-4c44-bd90-efc089bd9355",
+        "e12de6da-eab8-4abe-967c-06d0d959a18a",
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15",
+        "4903963a-90f0-4fe1-be23-ee4f8749e483",
+        "00b3badd-1613-4230-85d8-f87f04306aaa"
+      ],
+      "settings": {
+        "container": "w-full",
+        "grid_layout": "grid",
+        "grid_columns": "4",
+        "show_columns_switcher": false,
+        "pagination_limit": 24,
+        "paginate_type": "loadmore",
+        "show_sorting": true,
+        "show_filter": true,
+        "filters_type": "storefront_filters",
+        "sidebar": "fixed",
+        "sidebar_title": "Filters",
+        "limit_height_widget": true,
+        "limit_height": 200,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": false,
+        "collapsed_groups": "Brand, Vendor, Size"
+      }
+    },
+    "recent-viewed": {
+      "type": "recent-viewed-products",
+      "settings": {
+        "container": "w-full",
+        "heading": "Recently Viewed",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 0,
+        "enable_slider": true
+      }
+    },
+    "16462965411055ff2d": {
+      "type": "instagram",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "subheading": "@Thesupermade",
+        "description": "<p>\n\t<u><a href=\"https:\/\/www.thesupermade.com\/pages\/instagram-trending\"><span style=\"font-size:9px;\">VIEW MORE<span style=\"font-size:9px;\"><span style=\"font-size:9px;\"><\/span><\/span><\/span><\/a><\/u><u><\/u><u><\/u> \n<\/p>",
+        "header_alignment": "center",
+        "container": "w-full",
+        "background_color": "rgba(0,0,0,0)",
+        "layout": "grid",
+        "images_count": 4,
+        "grid_columns": 4,
+        "gap": 10,
+        "mobile_gap": 2,
+        "profile": "https:\/\/www.instagram.com\/thesupermade",
+        "button_label": "",
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "1651738243c6752c63",
+    "1651220226ff9a0f06",
+    "collection-header",
+    "main",
+    "recent-viewed",
+    "16462965411055ff2d"
+  ]
+}

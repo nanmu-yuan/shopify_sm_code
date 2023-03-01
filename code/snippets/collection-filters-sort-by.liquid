@@ -1,0 +1,25 @@
+{%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+<select name="sort_by" aria-describedby="a11y-refresh-page-message">
+   {%-comment -%}
+  {%- for option in collection.sort_options -%}
+    <option 
+      value="{{ option.value | escape }}"
+      {% if option.value == sort_by %} selected="selected"{% endif %}
+      data-index="{{ forloop.index0 }}"
+    >
+      {{ option.name | escape }}
+    </option>
+  {%- endfor -%}
+  {%- endcomment -%}
+  <option value="manual" {% if sort_by == "manual" %} selected="selected"{% endif %} data-index="0">
+      Featured
+    </option><option value="best-selling" {% if sort_by == "best-selling" %} selected="selected"{% endif %} data-index="1">
+      Most Popular
+    </option><option value="price-ascending" {% if sort_by == "price-ascending" %} selected="selected"{% endif %} data-index="2">
+      Price Low to High
+    </option><option value="price-descending" {% if sort_by == "price-descending" %} selected="selected"{% endif %} data-index="3">
+      Price High to Low
+    </option><option value="created-descending" {% if sort_by == "created-descending" %} selected="selected"{% endif %} data-index="4">
+      New Arrivals
+    </option>
+</select>
